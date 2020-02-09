@@ -1,0 +1,119 @@
+/* --------------------------------------------------------
+Style Sheet for Portfolio Website of Aromal Anil
+
+version: 1.0
+last modified: 09-02-2020 by Aromal Anil
+author: Aromal Anil
+email: aromalanilkannan@gmail.com
+website: https://aromalanil.github.io/
+----------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --red:#FE3E57;
+    --white:#FFFFFE;
+    --dim-white:#E1E1E1;
+    --background:#17315A;
+    --secondary-button:#294572;
+    
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-bar{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:11%;
+    padding-right: 11%;
+    height: 100px;
+    background-color: var(--background);
+    position: fixed;
+    top:0;
+    left:0;
+    transition: .5s;
+    transition-property: width;
+}
+
+.floatingNav {
+    height:60px;
+    box-shadow: 0px 1px 10px var(--secondary-button);
+}
+
+#logo h3{
+    color:var(--white);
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+
+#logo h3 span{
+    color:var(--red);
+}
+
+.nav-elements{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link a{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding-left:2.5vw;
+    padding-right: 2.5vw;
+    transition: .3s;
+    transition-property: color;
+}
+
+.nav-link a:hover{
+    color:var(--red);
+}
+
+#nav-btn{
+    width:130px;
+    height:40px;
+    background-color: var(--secondary-button);
+    border: 1px solid var(--red);
+    text-align: center;
+    margin-left:3vw;
+    transition: .3s;
+    transition-property: color;
+    cursor: pointer;
+}
+
+#nav-btn:hover{
+    background-color:var(--red);
+}
+
+#nav-btn p{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+
+.main{
+    min-height: 100vh;
+    background-color: var(--background);
+}
