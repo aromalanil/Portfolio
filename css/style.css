@@ -26,19 +26,43 @@ website: https://aromalanil.github.io/
 
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.email{
+    transform: rotate(90deg);
+    position: fixed;
+    bottom: 150px;
+    right: -80px;
+    display: flex;
+    align-items: center;
+}
+
+.mail{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--dim-white);
+}
+
+.mail-line{
+    margin-left: 30px;
+    width:150px;
+    height: 1px;
+    background-color: var(--dim-white);
+}
+
+
 .nav-bar{
     width:100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left:11%;
-    padding-right: 11%;
+    padding-left:15%;
+    padding-right: 15%;
     height: 100px;
     background-color: var(--background);
     position: fixed;
@@ -77,8 +101,8 @@ body{
 
 .nav-link a{
     color: var(--white);
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.6rem;
     text-decoration: none;
     padding-left:2.5vw;
     padding-right: 2.5vw;
@@ -108,12 +132,91 @@ body{
 
 #nav-btn p{
     color: var(--white);
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.6rem;
     line-height: 40px;
 }
 
+.all-content{
+    background-color: var(--background);
+}
+
 .main{
+    padding-top: 60px;
+    width: 100%;
     min-height: 100vh;
     background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15%;
+    width: 100%;
+    padding-right: 15%;
+}
+
+.main-content{
+    width:60%;
+}
+
+
+.main-content h3{
+    color:var(--dim-white);
+    font-size:2rem;
+    font-weight: 600;
+}
+
+.main-content h1{
+    color:var(--white);
+    font-size:6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+
+.main-content h1 span{
+    color:var(--red);
+}
+
+.main-content h2{
+    color:var(--white);
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+
+.btn-grp{
+    margin-top: 5.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    width:180px;
+    height: 55px;
+    color:var(--white);
+    font-weight: 600;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primary{
+    background-color:var(--red);
+    margin-right: 40px;
+}
+
+.secondary{
+    background-color:var(--secondary-button)
+}
+
+.main-img{
+    width: 70%;
+    position: relative;
+    left:100px;
+}
+
+.hero-img{
+    width:100%;
 }
