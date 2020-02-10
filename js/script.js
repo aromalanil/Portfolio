@@ -38,8 +38,5 @@
     let interval = setInterval(changeTitle, 3000);
     
 
-
-      
-
  });
 
