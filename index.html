@@ -15,6 +15,7 @@
     <meta name="keywords" content="Aromal-Anil,Aromal-CEC,Aromal-College-Of-Engineering-Cherthala,aromal-anil-cec,kerala-developer,aromal-anil-developer,aromal-anil-web-developer,aromal-developer,aromal-web-developer,aromal-ce-cherthala,aromal-engineer,aromal-computer-science,aromal-cseAromal-A,Aromal,Aromal-Alappuzha,Aromal-Kalavoor">
     <title>Aromal Anil</title>
 
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -23,8 +24,14 @@
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <!-- Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Hamburger Menu CSS-->
+    <link rel="stylesheet" href="./css/hamburger.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -50,16 +57,40 @@
             <p>Let's Talk</p>
         </div>
         </div>
+
+        <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+            <path
+                  class="line middle"
+                  d="m 30,50 h 40" />
+            <path
+                  class="line bottom"
+                  d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+          </svg>
     </nav>
 
 
     <!-- ADD-ONS -->
 
-    <div class="email">
-        <a href="mailto:aromalanilkannan@gmail.com" class="mail">aromalanilkannan@gmail.com</a>
+    <div class="email add-on">
+        <a href="mailto:someone@yoursite.com" target="_blank" class="mail">aromalanilkannan@gmail.com</a>
         <div class="mail-line"></div>
     </div>
 
+    <div class="social-icons add-on">
+        <a href="https://www.github.com/aromalanil" target="_blank"><i class="fa fa-github social-icon"></i></a> 
+        <a href="https://www.linkedin.com/in/aromalanil" target="_blank"><i class="fa fa-linkedin social-icon"></i></a> 
+        <a href="https://stackoverflow.com/users/story/12292984" target="_blank"><i class="fa fa-stack-overflow social-icon"></i></a> 
+        <a href="https://www.twitter.com/aromalanil5" target="_blank"><i class="fa fa-twitter social-icon"></i></a> 
+        <a href="https://www.dribbble.com/aromalanil" target="_blank"><i class="fa fa-dribbble social-icon"></i></a> 
+        
+        <div class="social-line"></div>
+    </div>
+
+
+    <!-- All Contents -->
     <div class="all-content">
     <!-- Main Section -->
     <main class="main">
@@ -68,7 +99,7 @@
             
             <h3>Hi There</h3>
             <h1>I'm <span>Aromal Anil</span></h1>
-            <h2>I am a <span>Web Developer</span></h2>
+            <h2 id="main-title">I am a &nbsp;<span class="title">Web Developer</span></h2>
 
             <div class="btn-grp">
             <div class="btn primary">
@@ -101,6 +132,11 @@
 
 
     </div>
+
+    <!-- Baffle JS -->
+    <script src="./libraries/baffle.js"></script>
+    <!-- Animate On Scroll JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom JS -->
     <script src="./js/script.js"></script>
 </body>

@@ -21,6 +21,7 @@ website: https://aromalanil.github.io/
     --dim-white:#E1E1E1;
     --background:#17315A;
     --secondary-button:#294572;
+    --dark-shadow:#051020;
     
 }
 
@@ -31,27 +32,59 @@ html{
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
 }
 
 .email{
-    transform: rotate(90deg);
     position: fixed;
-    bottom: 150px;
-    right: -80px;
+    bottom: 0;
+    right:50px;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .mail{
-    font-size: 1.4rem;
+    writing-mode: vertical-rl;
+    font-size: 10px;
     text-decoration: none;
-    color: var(--dim-white);
+    letter-spacing: 2px;
 }
 
 .mail-line{
-    margin-left: 30px;
-    width:150px;
-    height: 1px;
+    width:2px;
+    height:150px;
+    margin-top: 30px;
+}
+
+.social-icons{
+   position: fixed;
+   bottom: 0;
+   left: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.social-icon{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icon:hover{
+    color:var(--red);
+}
+
+.social-line{
+    width:2px;
+    height:100px;
+    margin-top: 10px;
+}
+
+.mail,.social-icon{
+    color:var(--dim-white);
+}
+.social-line,.mail-line{
     background-color: var(--dim-white);
 }
 
@@ -66,6 +99,7 @@ body{
     height: 100px;
     background-color: var(--background);
     position: fixed;
+    z-index: 10;
     top:0;
     left:0;
     transition: .5s;
@@ -74,7 +108,7 @@ body{
 
 .floatingNav {
     height:60px;
-    box-shadow: 0px 1px 10px var(--secondary-button);
+    box-shadow: 0px 1px 10px var(--dark-shadow);
 }
 
 #logo h3{
@@ -137,27 +171,36 @@ body{
     line-height: 40px;
 }
 
-.all-content{
-    background-color: var(--background);
-}
-
-.main{
-    padding-top: 60px;
-    width: 100%;
-    min-height: 100vh;
-    background-color: var(--background);
-    display: flex;
+body {
     align-items: center;
+    display: flex;
+    height: 100%;
     justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+
+  .ham{
+      display: none;
+  }
+
+.all-content{
+    overflow-x: hidden;
     padding-left: 15%;
     width: 100%;
     padding-right: 15%;
 }
 
-.main-content{
-    width:60%;
+.main{
+    padding-top: 60px;
+    min-height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    position: relative;
 }
-
 
 .main-content h3{
     color:var(--dim-white);
@@ -200,6 +243,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 5px 6px 21px 6px rgba(0,0,0,0.2);
+    user-select: none;
+}
+.btn:hover{
+    box-shadow: 5px 6px 12px 4px rgba(0,0,0,0.31);
 }
 
 .primary{
@@ -212,11 +260,138 @@ body{
 }
 
 .main-img{
-    width: 70%;
-    position: relative;
-    left:100px;
+    position: absolute;
+    right:-180px;
 }
 
 .hero-img{
-    width:100%;
+    display: block;
+    width:47vw;
 }
+
+
+
+/*
+Animations
+*/
+
+
+@media only screen and (max-width: 1200px) {
+
+    .main-content h1{
+        font-size:5rem;
+    }
+    .main-content h2{
+        font-size:2.5rem;
+    }
+    .main-content h3{
+        font-size:1.5rem;
+    }
+    .btn{
+        width:160px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 870px) 
+{
+    .nav-bar{
+        padding-left: 10%;
+        padding-right: 5%;
+        height: 80px;
+    }
+
+    .nav-elements{
+        opacity: 0;
+        background-color: var(--dark-shadow);
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        top:0;
+        right:0;
+        height: 100vh;
+        width: 100vw;
+        transition:.5s;
+        transition-property: opacity;
+    }
+    .nav-visible{
+        
+        opacity: 1;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        
+    }
+
+    .nav-link{
+        margin-top: 5vh;
+    }
+
+    .nav-links a{
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 2.5rem;
+    }
+
+    #nav-btn
+    {
+        background-color: #11233f;
+        margin-left: 0px;
+        margin-top: 10vh;
+        width:180px;
+        height:50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #nav-btn p{
+        font-size: 2rem;
+    }
+
+    .ham{
+        display: block;
+        position: relative;
+        z-index: 20;
+    }
+    .main{
+        margin-top: 10px;
+        justify-content: center;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .main-content h1{
+        font-size:4rem;
+    }
+    .main-content h2{
+        font-size:2rem;
+        line-height: 50px;
+    }
+    .main-content h3{
+        font-size:1.7rem;
+    }
+    .primary{
+        margin-right: 20px;
+    }
+    .btn-grp{
+        margin-top: 3rem;
+    }
+    .main-img{
+        position:static;
+        right:0px;
+    }
+
+    .main-img{
+        margin-bottom: 5vh;
+        height: 50%;
+    }
+    .hero-img{
+        width: 75vw;
+    }
+    .add-on{
+        display: none;
+    }
+}
+
