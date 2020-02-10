@@ -66,12 +66,12 @@ body{
    align-items: center;
 }
 
-.social-icon{
+.social-i{
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.social-icon:hover{
+.social-i:hover{
     color:var(--red);
 }
 
@@ -81,7 +81,7 @@ body{
     margin-top: 10px;
 }
 
-.mail,.social-icon{
+.mail,.social-i{
     color:var(--dim-white);
 }
 .social-line,.mail-line{
