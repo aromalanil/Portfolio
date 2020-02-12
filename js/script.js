@@ -15,7 +15,7 @@ $(document).ready(() => {
 
 
   // Menu bar for Mobile
-  $('.ham').click(function () {
+  $('.ham').click(function clickMenu() {
 
     //Making Side Menu Bar Visible/Invisible On Menu Click
     $('.nav-elements').toggleClass('nav-visible');

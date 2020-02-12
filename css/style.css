@@ -305,11 +305,15 @@ body {
     .nav-bar {
         padding-left: 10%;
         padding-right: 5%;
-        height: 60px;
+        height: 80px;
+    }
+    .floatingNav {
+        height: 55px;
     }
 
     .nav-elements {
         opacity: 0;
+        display: none;
         background-color: var(--dark-shadow);
         justify-content: center;
         flex-direction: column;
@@ -322,6 +326,7 @@ body {
     }
 
     .nav-visible {
+        display: flex;
         transition: .5s;
         transition-property: opacity;
         opacity: 1;
