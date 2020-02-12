@@ -198,7 +198,7 @@ body {
 }
 
 .main {
-    margin-top: 60px;
+    margin-top: 120px;
     min-height: 100vh;
     background-color: var(--background);
     display: flex;
@@ -266,22 +266,19 @@ body {
 
 .main-img {
     position: absolute;
-    right: -180px;
+    
+    right: -100px;
 }
 
 .hero-img {
     display: block;
-    width: 47vw;
+    width: 40vw;
 }
 
 
 
-/*
-Animations
-*/
 
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
 
     .main-content h1 {
         font-size: 5rem;
@@ -302,7 +299,7 @@ Animations
     }
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 970px) {
 
  
     .nav-bar {
@@ -320,13 +317,13 @@ Animations
         top: 0;
         right: 0;
         height: 100vh;
-        width: 100vw;
-        transition: .5s;
-        transition-property: opacity;
+        width: 100vw; 
+        
     }
 
     .nav-visible {
-
+        transition: .5s;
+        transition-property: opacity;
         opacity: 1;
     }
 
