@@ -19,7 +19,8 @@ website: https://aromalanil.netlify.com/
     --red: #FE3E57;
     --white: #FFFFFE;
     --dim-white: #E1E1E1;
-    --background: #17315A;
+    --primary-background: #17315A;
+    --secondary-background:rgb(13, 34, 68);
     --secondary-button: #294572;
     --dark-shadow: #051020;
 
@@ -32,7 +33,9 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--background);
+    background-color: var(--primary-background);
+    position: absolute;
+    width: 100%;
 }
 .add-on{
     animation: bottomUp .5s 1 0s linear;
@@ -40,7 +43,7 @@ body {
 .email {
     position: fixed;
     bottom: 0;
-    right: 50px;
+    right: 58px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +106,7 @@ body {
     padding-left: 15%;
     padding-right: 15%;
     height: 100px;
-    background-color: var(--background);
+    background-color: var(--primary-background);
     position: fixed;
     z-index: 10;
     top: 0;
@@ -178,32 +181,25 @@ body {
     line-height: 40px;
 }
 
-body {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    margin: 0;
-
-    position: absolute;
-    width: 100%;
-}
-
 .ham {
     display: none;
 }
 
 .all-content {
-    padding-left: 15%;
-    width: 100%;
-    padding-right: 15%;
+    
+    margin-left: 15%;
+    
+    margin-right: 15%;
 }
 
 .main {
-    margin-top: 120px;
+    margin-top: 36px;
     min-height: 100vh;
-    background-color: var(--background);
+    padding-bottom: 120px;
+    width: 100%;
+    background-color: var(--primary-background);
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
 }
@@ -228,7 +224,7 @@ body {
 
 .main-content h2 {
     color: var(--white);
-    font-weight: 400;
+    font-weight: 600;
     font-size: 3.5rem;
 }
 
@@ -267,14 +263,33 @@ body {
 }
 
 .main-img {
-    position: absolute;
-    
+    position: absolute; 
     right: -100px;
 }
 
 .hero-img {
     display: block;
     width: 40vw;
+}
+
+.about{
+    background-color:var(--secondary-background); 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 15%;
+}
+.about-content{
+    flex:6fr;
+}
+
+.about-img{
+    flex:4fr;
+}
+
+.about-img img{
+    width:400px;
+    border-radius: 8px;
 }
 
 
@@ -371,7 +386,7 @@ body {
     }
 
     .main {
-        margin-top: 250px;
+        margin-top: 0px;
         justify-content: center;
         flex-direction: column-reverse;
         text-align: center;
