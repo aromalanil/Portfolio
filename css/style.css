@@ -5,7 +5,7 @@ version: 1.0
 last modified: 09-02-2020 by Aromal Anil
 author: Aromal Anil
 email: aromalanilkannan@gmail.com
-website: https://aromalanil.github.io/
+website: https://aromalanil.netlify.com/
 ----------------------------------------------------------*/
 
 * {
@@ -34,7 +34,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--background);
 }
-
+.add-on{
+    animation: bottomUp .5s 1 0s linear;
+}
 .email {
     position: fixed;
     bottom: 0;
@@ -47,6 +49,7 @@ body {
 .mail {
     writing-mode: vertical-rl;
     font-size: 10px;
+    line-height:20px;
     text-decoration: none;
     letter-spacing: 2px;
 }
@@ -191,7 +194,6 @@ body {
 }
 
 .all-content {
-    overflow-x: hidden;
     padding-left: 15%;
     width: 100%;
     padding-right: 15%;
@@ -436,3 +438,21 @@ body {
     }
 
 }
+
+
+
+/* Animations */
+
+@keyframes bottomUp{
+    0%{
+        transform: translateY(40px);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx) translateY(0px);
+        opacity: 1;
+        }
+}
+
+
+  

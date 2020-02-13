@@ -25,13 +25,18 @@ $(document).ready(() => {
     if ($('.nav-elements').hasClass('nav-visible')) {
       $('.nav-link').click(() => {
         $('.ham').click();
+        $('.ham').removesClass('active');
       })
       $('.nav-btn').click(() => {
         $('.ham').click();
+        $('.ham').removesClass('active');
       })
     }
 
   });
+  
+
+ 
 
 
   //Changing Title Effect
@@ -52,6 +57,7 @@ $(document).ready(() => {
   }
 
   let interval = setInterval(changeTitle, 3000);
+
 
 
 });
