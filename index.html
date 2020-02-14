@@ -105,7 +105,7 @@
 
    
     <!-- Side ADD-ONS -->
-    <div class="email add-on">
+    <div class="email add-on" >
         <a href="mailto:aromalanilkannan@gmail.com" target="_blank" class="mail">aromalanilkannan@gmail.com</a>
         <div class="mail-line"></div>
     </div>
@@ -162,18 +162,18 @@
     <!-- About Section -->
     <section class="about section" id="about">
 
-        <div class="about-img">
+        <div class="about-img" >
             <img src="./resources/images/aromal_anil.jpeg" alt="">
         </div>
 
         <div class="about-content">
             <div class="about-brief">
-                <h1>About Me</h1>
-                <p>I am a Front End Web Developer & Android App Developer with industrial experience building websites and mobile applications. I specialize in JavaScript and have professional experience working with Java and C. I also have experience working with Android Studio, Node.js & React.</p>
+                <h1 data-aos="fade-up">About Me</h1>
+                <p data-aos="fade-up">I am a Front End Web Developer & Android App Developer with industrial experience building websites and mobile applications. I specialize in JavaScript and have professional experience working with Java and C. I also have experience working with Android Studio, Node.js & React.</p>
             </div>
 
             <div class="about-tabs">
-                <ul class="tabs">
+                <ul class="tabs" data-aos="fade-left">
                     <li class="tab" id="skill-head" onclick="viewTab('skills','skill-head')">Main Skills</li>
                     <li class="tab" id="exp-head" onclick="viewTab('experience','exp-head')">Experience</li>
                     <li class="tab" id="edu-head" onclick="viewTab('education','edu-head')">Education</li>
@@ -181,15 +181,15 @@
                 </ul>
 
                 <div class="tab-contents skills" id="skills">
-                    <div class="tab-content">
+                    <div class="tab-content" data-aos="fade-left">
                         <h3>Frontend Development</h3>
                         <p>Creating optimized & responsive websites/webapps</p>
                     </div>
-                    <div class="tab-content">
+                    <div class="tab-content" data-aos="fade-left">
                         <h3>Android Development</h3>
                         <p>Develop Native Android Applications</p>
                     </div>
-                    <div class="tab-content">
+                    <div class="tab-content" data-aos="fade-left">
                         <h3>UI/UX Design</h3>
                         <p>Loves to give users the right experience</p>
                     </div>
@@ -263,6 +263,15 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom JS -->
     <script src="./js/script.js"></script>
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            delay:300,
+            duration:900,
+            once:true,
+            disable:'mobile'
+        });
+    </script>
 </body>
 
 

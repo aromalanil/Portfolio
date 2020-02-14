@@ -34,6 +34,7 @@ $(document).ready(() => {
 
     //Making Side Menu Invisible when clicked on any link/btn in menu
     if ($('.nav-elements').hasClass('nav-visible')) {
+      $('body').css("overflow", "hidden");
       $('.nav-link').click(() => {
         $('.ham').click();
         $('.ham').removesClass('active');
@@ -42,6 +43,9 @@ $(document).ready(() => {
         $('.ham').click();
         $('.ham').removesClass('active');
       })
+    }
+    else{
+      $('body').css("overflow", "visible");
     }
 
   });
