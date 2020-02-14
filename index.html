@@ -53,6 +53,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
     <!-- Animate On Scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Hamburger Menu CSS-->
@@ -78,7 +80,7 @@
                 <li class="nav-link"><a href="#">Portfolio</a></li>
                 <li class="nav-link"><a href="#">Blog</a></li>
             </ul>
-            <div id="nav-btn" target="_blank" onclick="window.location.href = 'mailto:aromalanilkannan@gmail.com';">
+            <div id="nav-btn" target="_blank" onclick="window.open('mailto:aromalanilkannan@gmail.com');">
                 <p>Let's Talk</p>
             </div>
         </div>
@@ -91,10 +93,10 @@
                 d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
         </svg>
     </nav>
+    <!-- Navigation Bar Ends-->
 
-
-    <!-- ADD-ONS -->
-
+   
+    <!-- Side ADD-ONS -->
     <div class="email add-on">
         <a href="mailto:aromalanilkannan@gmail.com" target="_blank" class="mail">aromalanilkannan@gmail.com</a>
         <div class="mail-line"></div>
@@ -110,10 +112,11 @@
 
         <div class="social-line"></div>
     </div>
+    <!-- Side ADD-ONS Ends -->
 
 
-    <!-- All Contents -->
-    <div class="all-content">
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
         <!-- Main Section -->
         <main class="main">
 
@@ -124,7 +127,7 @@
                 <h2 id="main-title">I am a &nbsp;<span class="title">Web Developer</span></h2>
 
                 <div class="btn-grp">
-                    <div class="btn primary">
+                    <div class="btn primary" onclick="window.open('./resources/resume.pdf');"">
                         <p>Download CV</p>
                     </div>
                     <div class="btn secondary">
@@ -136,37 +139,99 @@
 
             <div class="main-img">
 
-                <img class="hero-img" src="./images/hero.svg" alt="guy with a laptop">
+                <img class="hero-img" src="./resources/images/hero.svg" alt="guy with a laptop">
 
             </div>
 
         </main>
+        <!-- Main Section Ends-->
 
     </div>
+    <!-- Main Wrapper Ends -->
 
-    <section class="about" id="about">
+
+    <!-- About Section -->
+    <section class="about section" id="about">
 
         <div class="about-img">
-            <img src="./images/aromal_anil.jpeg" alt="">
+            <img src="./resources/images/aromal_anil.jpeg" alt="">
         </div>
 
         <div class="about-content">
             <div class="about-brief">
                 <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae impedit possimus, velit perferendis autem asperiores cum, officiis iste voluptates placeat officia odit reiciendis obcaecati magni incidunt deserunt nostrum, ratione quo?</p>
+                <p>I am a Front End Web Developer & Android App Developer with industrial experience building websites and mobile applications. I specialize in JavaScript and have professional experience working with Java and C. I also have experience working with Android Studio, Node.js & React.</p>
             </div>
 
             <div class="about-tabs">
                 <ul class="tabs">
-                    <li class="tabs">Main Skills</li>
-                    <li class="tabs">Experience</li>
-                    <li class="tabs">Education</li>
-                    <li class="tabs">Certification</li>  
+                    <li class="tab" id="skill-head" onclick="viewTab('skills','skill-head')">Main Skills</li>
+                    <li class="tab" id="exp-head" onclick="viewTab('experience','exp-head')">Experience</li>
+                    <li class="tab" id="edu-head" onclick="viewTab('education','edu-head')">Education</li>
+                    <li class="tab" id="cert-head" onclick="viewTab('certification','cert-head')">Certification</li>  
                 </ul>
+
+                <div class="tab-contents skills" id="skills">
+                    <div class="tab-content">
+                        <h3>Frontend Development</h3>
+                        <p>Creating optimized & responsive websites/webapps</p>
+                    </div>
+                    <div class="tab-content">
+                        <h3>Android Development</h3>
+                        <p>Develop Native Android Applications</p>
+                    </div>
+                    <div class="tab-content">
+                        <h3>UI/UX Design</h3>
+                        <p>Loves to give users the right experience</p>
+                    </div>
+                </div>
+                <div class="tab-contents experience">
+                    <div class="tab-content">
+                        <h3>Android Developer Intern</h3>
+                        <p>iNFOX Technologies</p>
+                    </div>
+                    <div class="tab-content">
+                        <h3>Freelance Web Developer</h3>
+                        <p>Fiverr.</p>
+                    </div>
+                    <div class="tab-content">
+                        <h3>Blogger</h3>
+                        <p>Medium</p>
+                    </div>
+                </div>
+                <div class="tab-contents education">
+                    <div class="tab-content">
+                        <h3>B.Tech, Computer Science and Engineering</h3>
+                        <p>College of Engineering Cherthala : 2017-2021</p>
+                    </div>
+                    <div class="tab-content">
+                        <h3>Higher Secondary Education</h3>
+                        <p>G.H.S.S Kalavoor : 2015-2017</p>
+                    </div>
+                    <div class="tab-content">
+                        <h3>High School</h3>
+                        <p>L.F.P.S Kalavoor</p>
+                    </div>
+                </div>
+                <div class="tab-contents certification">
+                    <div class="tab-content link" onclick="window.open('https://www.freecodecamp.org/certification/aromalanil/javascript-algorithms-and-data-structureshttps://www.freecodecamp.org/certification/aromalanil/javascript-algorithms-and-data-structures');">
+                        <h3>JavaScript Algorithms and Data Structures</h3>
+                        <p>FreeCodeCamp.org</p>
+                    </div>
+                    <div class="tab-content link" onclick="window.open('https://www.udemy.com/certificate/UC-OLFND83Q/');">
+                        <h3>Programming for Entrepreneurs - HTML & CSS</h3>
+                        <p>Zenva</p>
+                    </div>
+                    <div class="tab-content link" onclick="window.open('https://www.udemy.com/certificate/UC-YA6RF154/');">
+                        <h3>JavaScript Essentials</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
             </div>
         </div>
 
     </section>
+    <!-- About Section Ends-->
 
 
 

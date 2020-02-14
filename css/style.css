@@ -19,10 +19,17 @@ website: https://aromalanil.netlify.com/
     --red: #FE3E57;
     --white: #FFFFFE;
     --dim-white: #E1E1E1;
+    --primary-text:rgb(230, 241, 255);
+    --territory-text: rgb(214, 217, 224);
+    --secondary-text: rgb(166, 172, 194);
     --primary-background: #17315A;
     --secondary-background:rgb(13, 34, 68);
     --secondary-button: #294572;
     --dark-shadow: #051020;
+
+
+    --montserrat :'Montserrat', sans-serif;
+    --poppins: 'Poppins', sans-serif;
 
 }
 
@@ -32,11 +39,37 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--montserrat);
     background-color: var(--primary-background);
+    color: var(--white);
     position: absolute;
     width: 100%;
 }
+h1{
+    font-size: 5.7rem;
+    letter-spacing:-1px;
+}
+h2{
+    font-size: 5rem;
+}
+h3{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.8rem;
+    font-family: var(--poppins);
+    text-align: justify;
+    color:var(--secondary-text);
+}
+
+li{
+    font-size: 1.9rem;
+    font-family: var(--poppins);
+    text-align: justify;
+    color:var(--secondary-text);
+}
+
+
 .add-on{
     animation: bottomUp .5s 1 0s linear;
 }
@@ -143,6 +176,7 @@ body {
 }
 
 .nav-link a {
+    font-family: var(--montserrat);
     color: var(--white);
     font-weight: 700;
     font-size: 1.6rem;
@@ -154,6 +188,7 @@ body {
 }
 
 .nav-link a:hover {
+    
     color: var(--red);
 }
 
@@ -162,7 +197,6 @@ body {
     height: 40px;
     background-color: var(--secondary-button);
     border: 1px solid var(--red);
-    text-align: center;
     margin-left: 3vw;
     transition: .3s;
     transition-property: color;
@@ -175,7 +209,9 @@ body {
 }
 
 #nav-btn p {
+    font-family: var(--montserrat);
     color: var(--white);
+    text-align: center;
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 40px;
@@ -185,10 +221,8 @@ body {
     display: none;
 }
 
-.all-content {
-    
+.main-wrapper {
     margin-left: 15%;
-    
     margin-right: 15%;
 }
 
@@ -196,6 +230,7 @@ body {
     margin-top: 36px;
     min-height: 100vh;
     padding-bottom: 120px;
+    padding-top: 120px;
     width: 100%;
     background-color: var(--primary-background);
     display: flex;
@@ -238,8 +273,6 @@ body {
     width: 180px;
     height: 55px;
     color: var(--white);
-    font-weight: 600;
-    font-size: 1.7rem;
     border-radius: 5px;
     cursor: pointer;
     display: flex;
@@ -247,6 +280,12 @@ body {
     justify-content: center;
     box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
     user-select: none;
+}
+.btn p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color:var(--white);
+    font-family: var(--montserrat);
 }
 
 .btn:hover {
@@ -272,23 +311,100 @@ body {
     width: 40vw;
 }
 
+.section{
+    padding: 120px 15%;
+}
+
 .about{
     background-color:var(--secondary-background); 
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    padding: 120px 15%;
+    height:100%;
+    align-items: center;  
 }
 .about-content{
-    flex:6fr;
+    margin-left: 50px;
+    flex-basis:60%;
 }
 
 .about-img{
-    flex:4fr;
+    flex-basis:40%;
+    height: 100%;
+}
+
+.about-brief{
+    margin-bottom: 30px;
+}
+
+.about-brief h1{
+    margin-bottom: 15px;
+}
+
+.about-tabs{
+    margin-top: 50px;
+}
+
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    font-family: var(--montserrat);
+    list-style: none;
+    margin-left: -15px;
+    
+}
+.tab{
+    position: relative;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: var(--montserrat);
+    font-weight: 600;
+    color:var(--primary-text);
+    margin:0 15px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    user-select: none;
+    transition: .3s;
+}
+
+.tab::after{
+    content: '';
+    display: block;
+    background: var(--dim-white);
+    height: 4px;
+    max-width: 50px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.active-tab{
+    color:var(--red);
+}
+
+.tab-content{
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.tab-content h3{
+    font-family: var(--poppins);
+    font-weight: 500;
+    color:var(--territory-text);
+}
+.tab-content p{
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.link{
+    cursor: pointer;
 }
 
 .about-img img{
-    width:400px;
+    height:100%;
+    width: 100%;
+    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -297,28 +413,20 @@ body {
 
 @media only screen and (max-width: 1300px) {
 
-    .main-content h1 {
-        font-size: 5rem;
+    html{
+        font-size: 8.8px;
     }
-
-    .main-content h2 {
-        font-size: 2.5rem;
-    }
-
-    .main-content h3 {
-        font-size: 1.5rem;
-    }
-
     .btn {
         width: 160px;
         height: 50px;
-        font-size: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 970px) {
 
- 
+    html{
+        font-size:8px;
+    }
     .nav-bar {
         padding-left: 10%;
         padding-right: 5%;
@@ -361,7 +469,7 @@ body {
     .nav-links a {
         padding-left: 0px;
         padding-right: 0px;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     #nav-btn {
@@ -374,11 +482,11 @@ body {
         align-items: center;
         justify-content: center;
     }
-
-    #nav-btn p {
-        font-size: 2rem;
+    #nav-btn p{
+        font-size: 2.4rem;
     }
 
+   
     .ham {
         display: block;
         position: relative;
@@ -392,17 +500,9 @@ body {
         text-align: center;
     }
 
-    .main-content h1 {
-        font-size: 4rem;
-    }
-
+   
     .main-content h2 {
-        font-size: 2rem;
         line-height: 50px;
-    }
-
-    .main-content h3 {
-        font-size: 1.7rem;
     }
 
     .primary {
@@ -411,6 +511,7 @@ body {
 
     .btn-grp {
         margin-top: 3rem;
+        justify-content: center;
     }
 
     .main-img {
@@ -430,11 +531,43 @@ body {
     .add-on {
         display: none;
     }
+    .section{
+        padding: 60px 8%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-content{
+        margin-left: 0px;
+        flex-basis:70%;
+    }
+    .about-img img{
+        min-height: 200px;
+        min-height: 200px;
+        height:70vw;
+        width:70vw;
+        object-fit: cover;
+    }
+    .about-brief h1{
+        margin-top:30px;
+    }
+    .about-brief{
+        margin-bottom: 0px;
+    }
+    .tab{
+        font-size: 2.2rem;
+    }
+    
+    
 }
 
 
 @media only screen and (max-width: 600px) {
 
+    .main{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
     .main-content h1 {
         font-size: 10vw;
     }

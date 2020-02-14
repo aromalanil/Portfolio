@@ -56,9 +56,21 @@ $(document).ready(() => {
     i++;
   }
 
-  let interval = setInterval(changeTitle, 3000);
+  setInterval(changeTitle, 3000);
 
+
+
+  viewTab('skills',"skill-head");
+  
 
 
 });
 
+function viewTab(tabName,tabHead)
+{
+  $('.tab').css({color:"var(--primary-text)"});
+  $('#'+tabHead).css({color:"var(--red)"});
+  
+  $('.tab-contents').css({display: "none"});
+  $('.'+tabName).css({display: "block"});
+}
