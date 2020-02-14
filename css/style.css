@@ -2,7 +2,8 @@
 Style Sheet for Portfolio Website of Aromal Anil
 
 version: 1.0
-last modified: 09-02-2020 by Aromal Anil
+Start Date : 09-02-2020
+last modified: 14-02-2020 by Aromal Anil
 author: Aromal Anil
 email: aromalanilkannan@gmail.com
 website: https://aromalanil.netlify.com/
@@ -70,6 +71,23 @@ li{
 }
 
 
+
+
+
+
+
+.loader-body{
+    position: fixed;
+    background-color: var(--primary-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:999;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
 .add-on{
     animation: bottomUp .5s 1 0s linear;
 }
@@ -92,7 +110,7 @@ li{
 
 .mail-line {
     width: 2px;
-    height: 150px;
+    height: 112px;
     margin-top: 30px;
 }
 
@@ -365,17 +383,37 @@ li{
     margin-bottom: 10px;
     line-height: 30px;
     user-select: none;
-    transition: .3s;
+    transition: .8s;
+    transition-property: color;
 }
 
 .tab::after{
     content: '';
     display: block;
     background: var(--dim-white);
-    height: 4px;
+    height: 3px;
     max-width: 50px;
     width: 100%;
     border-radius: 10px;
+    transition: 1s;
+}
+
+.active::after
+{
+    content: '';
+    display: block;
+    background: var(--red);
+    height: 3px;
+    max-width: 150px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 1s;
+
+}
+
+.tab:hover::after{
+    background:var(--red);
+    max-width: 150px;
 }
 
 .active-tab{
@@ -384,8 +422,9 @@ li{
 
 .tab-content{
     margin-top: 20px;
-    transition: .5s;
+    height: 50px;
 }
+
 
 .tab-content h3{
     font-family: var(--poppins);

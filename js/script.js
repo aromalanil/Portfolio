@@ -2,7 +2,18 @@
  * @author Aromal Anil <aromalanilkannan@gmail.com>
  */
 
+//Hiding the Preloader
+$('body').css("overflow", "hidden");
+$(window).on('load', () => {
+  $('.loader').fadeOut();
+  $('.loader-body').delay(350).fadeOut('slow');
+  $('body').delay(350).css({ 'overflow': 'visible' });
+});
+
+
+
 $(document).ready(() => {
+
 
   //NavBar Drop Shadow on scroll
   $(window).scroll(function () {
@@ -34,9 +45,9 @@ $(document).ready(() => {
     }
 
   });
-  
 
- 
+
+
 
 
   //Changing Title Effect
@@ -59,18 +70,23 @@ $(document).ready(() => {
   setInterval(changeTitle, 3000);
 
 
+  //Setting Activate Tab in About Section
+  viewTab('skills', "skill-head");
 
-  viewTab('skills',"skill-head");
-  
+
 
 
 });
 
-function viewTab(tabName,tabHead)
-{
-  $('.tab').css({color:"var(--primary-text)"});
-  $('#'+tabHead).css({color:"var(--red)"});
-  
-  $('.tab-contents').css({display: "none"});
-  $('.'+tabName).css({display: "block"});
+
+
+function viewTab(tabName, tabHead) {
+  $('.tab').removeClass('active');
+  $('#' + tabHead).toggleClass('active');
+
+  $('.tab').css({ color: "var(--primary-text)" });
+  $('#' + tabHead).css({ color: "var(--red)" });
+
+  $('.tab-contents').css({ display: "none", opacity: "0" });
+  $('.' + tabName).css({ display: "block", opacity: "1" });
 }
