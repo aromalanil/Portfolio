@@ -5,9 +5,9 @@
 //Hiding the Preloader
 $('body').css("overflow", "hidden");
 $(window).on('load', () => {
-  $('.loader').fadeOut();
-  $('.loader-body').delay(350).fadeOut('slow');
-  $('body').delay(350).css({ 'overflow': 'visible' });
+  $('.loader').delay(500).fadeOut();
+  $('.loader-body').delay(850).fadeOut('slow');
+  $('body').delay(850).css({ 'overflow': 'visible' });
 });
 
 
