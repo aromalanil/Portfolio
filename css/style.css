@@ -92,7 +92,8 @@ li{
 }
 
 .add-on{
-    animation: bottomUp .5s 1 0s linear;
+    animation: bottomUp .6s 1 0s linear;
+    animation-delay: 850ms;
 }
 .email {
     position: fixed;
@@ -129,6 +130,8 @@ li{
 .social-i {
     font-size: 20px;
     margin-bottom: 20px;
+    transition: .3s;
+    transition-property: color;
 }
 
 .social-i:hover {
@@ -165,8 +168,8 @@ li{
     z-index: 10;
     top: 0;
     left: 0;
-    transition: .5s;
-    transition-property: width;
+    transition: 350ms;
+    transition-property: height;
 }
 
 .floatingNav {
@@ -301,6 +304,7 @@ li{
     justify-content: center;
     box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
     user-select: none;
+    transition: .1s;
 }
 .btn p{
     font-size: 1.7rem;
@@ -395,10 +399,9 @@ li{
     content: '';
     display: block;
     background: var(--dim-white);
-    height: 3px;
+    height: 2.5px;
     max-width: 50px;
     width: 100%;
-    border-radius: 10px;
     transition: 1s;
 }
 
@@ -407,18 +410,12 @@ li{
     content: '';
     display: block;
     background: var(--red);
-    height: 3px;
+    height: 2.5px;
     max-width: 150px;
     width: 100%;
-    border-radius: 10px;
     transition: 1s;
-
 }
 
-.tab:hover::after{
-    background:var(--red);
-    max-width: 150px;
-}
 
 .active-tab{
     color:var(--red);
@@ -691,7 +688,7 @@ li{
 
 @keyframes bottomUp{
     0%{
-        transform: translateY(40px);
+        transform: translateY(150px);
         opacity: 0;
         }
     100%{
