@@ -70,6 +70,21 @@ li{
     color:var(--secondary-text);
 }
 
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: var(--territory-text);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #6d6d6d7a; 
+}
+
 
 
 
@@ -92,7 +107,7 @@ li{
 }
 
 .add-on{
-    animation: bottomUp .6s 1 0s linear;
+    animation: bottomUp .7s 1 0s ease-in;
     animation-delay: 850ms;
 }
 .email {
@@ -304,7 +319,8 @@ li{
     justify-content: center;
     box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
     user-select: none;
-    transition: .1s;
+    transition:  .3s;
+    transition-property: box-shadow;
 }
 .btn p{
     font-size: 1.7rem;
@@ -391,7 +407,7 @@ li{
     margin-bottom: 10px;
     line-height: 30px;
     user-select: none;
-    transition: .8s;
+    transition: .5s;
     transition-property: color;
 }
 
@@ -402,7 +418,7 @@ li{
     height: 2.5px;
     max-width: 50px;
     width: 100%;
-    transition: 1s;
+    transition: .5s;
 }
 
 .active::after
@@ -413,7 +429,7 @@ li{
     height: 2.5px;
     max-width: 150px;
     width: 100%;
-    transition: 1s;
+    transition: .5s;
 }
 
 
@@ -446,6 +462,10 @@ li{
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.portfolio{
+    min-height: 100vh;
 }
 
 

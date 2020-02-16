@@ -71,7 +71,7 @@ $(document).ready(() => {
     i++;
   }
 
-  setInterval(changeTitle, 3000);
+  setInterval(changeTitle, 3200);
 
 
   //Setting Activate Tab in About Section
