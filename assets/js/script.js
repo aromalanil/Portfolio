@@ -8,6 +8,8 @@ $(window).on('load', () => {
   $('.loader').delay(500).fadeOut();
   $('.loader-body').delay(850).fadeOut('slow');
   $('body').delay(850).css({ 'overflow': 'visible' });
+
+  AOS.refresh();
 });
 
 
