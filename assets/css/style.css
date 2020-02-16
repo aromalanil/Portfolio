@@ -127,6 +127,12 @@ li{
     letter-spacing: 2px;
 }
 
+.mail::after,mail::before{
+    writing-mode: horizontal-tb;
+}
+
+
+
 .mail-line {
     width: 2px;
     height: 112px;
@@ -142,9 +148,14 @@ li{
     align-items: center;
 }
 
+.social a{
+    width: 100%;
+    height: 100%;
+}
+
 .social-i {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin: 10px auto;
     transition: .3s;
     transition-property: color;
 }
@@ -455,7 +466,9 @@ li{
 
 .link{
     cursor: pointer;
+    position: relative;
 }
+
 
 .about-img img{
     height:100%;
@@ -578,7 +591,6 @@ li{
     #nav-btn p{
         font-size: 2.4rem;
     }
-
    
     .ham {
         display: block;
@@ -597,7 +609,6 @@ li{
         text-align: center;
     }
 
-   
     .main-content h2 {
         line-height: 50px;
     }
@@ -625,7 +636,6 @@ li{
         width: 75vw;
         max-width: 500px;
     }
-
 
     .section{
         padding: 60px 8%;
@@ -690,12 +700,12 @@ li{
         height: 70px;
     }
 
-    
 }
 
 @media only screen and (max-width: 400px) {
     .btn{
         width: 40vw;
+        height: 12.8vw;
     }
     .btn p{
         font-size: 4vw;
