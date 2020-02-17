@@ -3,7 +3,7 @@ Style Sheet for Portfolio Website of Aromal Anil
 
 version: 1.0
 Start Date : 09-02-2020
-last modified: 14-02-2020 by Aromal Anil
+last modified: 16-02-2020 by Aromal Anil
 author: Aromal Anil
 email: aromalanilkannan@gmail.com
 website: https://aromalanil.netlify.com/
@@ -72,7 +72,7 @@ li{
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 7px;
 }
  
 ::-webkit-scrollbar-track {
@@ -81,8 +81,12 @@ li{
 
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #6d6d6d7a; 
+    border-radius: 50px;
+    background: #5757577a; 
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #1818187a; 
 }
 
 
