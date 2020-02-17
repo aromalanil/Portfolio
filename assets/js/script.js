@@ -46,9 +46,11 @@ $(document).ready(() => {
         $('.ham').removesClass('active');
       })
     }
-    else{
+    else {
       $('body').css("overflow", "visible");
     }
+
+
 
   });
 

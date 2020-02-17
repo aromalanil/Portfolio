@@ -24,13 +24,14 @@ website: https://aromalanil.netlify.com/
     --territory-text: rgb(214, 217, 224);
     --secondary-text: rgb(166, 172, 194);
     --primary-background: #17315A;
+    --card-background:rgb(50, 91, 153);
     --secondary-background:rgb(13, 34, 68);
     --secondary-button: #294572;
     --dark-shadow: #051020;
 
 
     --montserrat :'Montserrat', sans-serif;
-    --poppins: 'Poppins', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
 
 }
 
@@ -58,14 +59,14 @@ h3{
 }
 p{
     font-size: 1.8rem;
-    font-family: var(--poppins);
+    font-family: var(--open-sans);
     text-align: justify;
     color:var(--secondary-text);
 }
 
 li{
     font-size: 1.9rem;
-    font-family: var(--poppins);
+    font-family: var(--open-sans);
     text-align: justify;
     color:var(--secondary-text);
 }
@@ -459,7 +460,7 @@ li{
 
 
 .tab-content h3{
-    font-family: var(--poppins);
+    font-family: var(--open-sans);
     font-weight: 500;
     color:var(--territory-text);
 }
@@ -483,8 +484,115 @@ li{
 
 .portfolio{
     min-height: 100vh;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
+.portfolio h2, .portfolio h3{
+    text-align: center;
+}
+
+.works{
+    width: 100%;
+}
+
+.all-works{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    gap: 30px;
+    margin-top: 50px;
+}
+
+
+/* Card UI */
+
+  .project-card{
+    justify-self:stretch;
+    background-color: #17315A;
+    border-radius:10px;
+    overflow:hidden;
+  }
+  
+  .project-img{
+    width:100%;
+    height:auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit:cover;
+    transition: .3s ease-in;
+    transition-property: transform;
+  }
+
+  .project-card:hover img{
+      transform: scale(1.05);
+  }
+  
+  .card-content{
+    height:340px;
+    padding:30px;
+    padding-top:50px;
+    position:relative;
+    background-color:var(--card-background);
+  }
+  .card-content p{
+      font-size: 1.6rem;
+      text-align: left;
+      font-weight: 400;
+      color:var(--primary-text);
+      letter-spacing: .5px;
+  }
+  .card-content h4, .card-content h5{
+      color:white;
+      
+  }
+  .card-content h4{
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+  }
+
+  .card-content h5{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--dim-white);
+    margin-bottom: 20px;
+}
+
+ .card-icon{
+     width:5.8rem;
+     height: 5.8rem;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--red);
+     background: linear-gradient(90deg, rgba(254,62,87,1) 0%, rgba(250,91,111,1) 100%);
+     position: absolute;
+     top:-3rem;
+     right:1.5rem;
+     transition: .3s ease;
+ }
+
+ .demo{
+    right:9rem;
+ }
+
+ .card-i{
+     font-size: 2.8rem;
+     
+ }
+
+ .card-icon:hover{
+     transform: scale(1.08);
+ }
+ 
+ .demo i{
+     font-size: 2.4rem;
+ }
+
+
+
+/* Card UI Ends */
 
 
 @media only screen and (max-width: 1470px) {
@@ -704,6 +812,8 @@ li{
         height: 70px;
     }
 
+    
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -715,6 +825,23 @@ li{
         font-size: 4vw;
     }
 }
+
+
+
+/* Remove hovering on unsupported devices */
+@media (hover: none) { 
+    .project-card:hover img{
+        transform: scale(1);
+    }
+    .card-icon:hover{
+        transform: scale(1);
+    }
+    .btn:hover {
+        box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+
 
 
 
