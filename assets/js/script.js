@@ -50,8 +50,6 @@ $(document).ready(() => {
       $('body').css("overflow", "visible");
     }
 
-
-
   });
 
 
@@ -83,6 +81,14 @@ $(document).ready(() => {
 
 
 
+  
+    $('.project-card').click(function(){
+      $(this).children('.card-content').toggleClass('view-card-details')
+    });
+
+    $('.project-card').hover(function(){
+      $(this).children('.card-content').toggleClass('view-card-details')
+    });
 
 });
 

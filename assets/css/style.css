@@ -24,7 +24,7 @@ website: https://aromalanil.netlify.com/
     --territory-text: rgb(214, 217, 224);
     --secondary-text: rgb(166, 172, 194);
     --primary-background: #17315A;
-    --card-background:rgb(50, 91, 153);
+    --card-background:rgb(35, 64, 107);
     --secondary-background:rgb(13, 34, 68);
     --secondary-button: #294572;
     --dark-shadow: #051020;
@@ -62,6 +62,8 @@ p{
     font-family: var(--open-sans);
     text-align: justify;
     color:var(--secondary-text);
+    letter-spacing: .5px;
+    
 }
 
 li{
@@ -253,8 +255,8 @@ li{
     background-color: var(--secondary-button);
     border: 1px solid var(--red);
     margin-left: 3vw;
-    transition: .3s;
-    transition-property: color;
+    transition: .2s;
+    transition-property:  background-color;
     cursor: pointer;
     user-select: none;
 }
@@ -486,10 +488,14 @@ li{
     min-height: 100vh;
     padding-left: 12%;
     padding-right: 12%;
+    background-color: var(--secondary-background);
 }
 
 .portfolio h2, .portfolio h3{
     text-align: center;
+}
+.portfolio h3{
+    font-weight: 600;
 }
 
 .works{
@@ -508,69 +514,77 @@ li{
 
   .project-card{
     justify-self:stretch;
-    background-color: #17315A;
-    border-radius:10px;
-    overflow:hidden;
+    position: relative;
+    height:35rem;
   }
   
   .project-img{
     width:100%;
-    height:auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    height:25rem;
     object-fit:cover;
-    transition: .3s ease-in;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    transition: .3s 1ease-in;
     transition-property: transform;
-  }
-
-  .project-card:hover img{
-      transform: scale(1.05);
   }
   
   .card-content{
-    height:340px;
-    padding:30px;
-    padding-top:50px;
-    position:relative;
+    height:11rem;
+    position:absolute;
+    padding:3.9rem 3.0rem;
+    bottom:0px;
+    left:0;
+    right:0;
     background-color:var(--card-background);
+    transition: .3s;
+    overflow:hidden;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
   }
+
   .card-content p{
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       text-align: left;
       font-weight: 400;
       color:var(--primary-text);
       letter-spacing: .5px;
   }
   .card-content h4, .card-content h5{
-      color:white;
-      
+      color:white;  
   }
   .card-content h4{
-      font-size: 2.3rem;
+      font-size: 1.8rem;
       font-weight: 700;
-      margin-bottom: 8px;
+      margin-bottom: .8rem;
   }
 
   .card-content h5{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 500;
     color: var(--dim-white);
-    margin-bottom: 20px;
+    margin-bottom: 4rem;
+}
+
+.card-icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:3rem;
+    padding-left: 0;
 }
 
  .card-icon{
-     width:5.8rem;
-     height: 5.8rem;
+     position: static ;
+     margin-right: 20px;
+     width:5rem;
+     height: 5rem;
      border-radius: 50%;
      display: flex;
      align-items: center;
      justify-content: center;
      background-color: var(--red);
      background: linear-gradient(90deg, rgba(254,62,87,1) 0%, rgba(250,91,111,1) 100%);
-     position: absolute;
-     top:-3rem;
-     right:1.5rem;
-     transition: .3s ease;
+     transition: .1s;
  }
 
  .demo{
@@ -578,19 +592,13 @@ li{
  }
 
  .card-i{
-     font-size: 2.8rem;
+     font-size: 2.5rem;
      
  }
 
- .card-icon:hover{
-     transform: scale(1.08);
- }
- 
  .demo i{
      font-size: 2.4rem;
  }
-
-
 
 /* Card UI Ends */
 
@@ -812,6 +820,25 @@ li{
         height: 70px;
     }
 
+    .card-content{
+       padding-top:20px;
+    }
+    .card-content p{
+        font-size: 1.7rem;
+    }
+    .card-content h4{
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: .8rem;
+    }
+  
+    .card-content h5{
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: var(--dim-white);
+      margin-bottom: 20px;
+  }
+
     
 
 }
@@ -833,14 +860,26 @@ li{
     .project-card:hover img{
         transform: scale(1);
     }
-    .card-icon:hover{
-        transform: scale(1);
-    }
     .btn:hover {
         box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
     }
+    .view-card-details{
+        height:100%;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+    }
   }
 
+  @media (hover:hover){
+    .project-card:hover .card-content{
+        height: 100%;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+    }
+    .card-icon:hover{
+        transform: scale(1.08);
+    }
+  }
 
 
 
