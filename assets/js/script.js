@@ -5,9 +5,9 @@
 //Hiding the Preloader
 $('body').css("overflow", "hidden");
 $(window).on('load', () => {
-  $('.loader').delay(500).fadeOut();
-  $('.loader-body').delay(850).fadeOut('slow');
-  $('body').delay(850).css({ 'overflow': 'visible' });
+  $('.loader').fadeOut();
+  $('.loader-body').delay(350).fadeOut('slow');
+  $('body').delay(350).css({ 'overflow': 'visible' });
 
   AOS.refresh();
 });
@@ -81,14 +81,32 @@ $(document).ready(() => {
 
 
 
-  
-    $('.project-card').click(function(){
-      $(this).children('.card-content').toggleClass('view-card-details')
-    });
+  //Showing & Hiding Card Content on Click
+  $('.project-card').click(function () {
 
-    $('.project-card').hover(function(){
-      $(this).children('.card-content').toggleClass('view-card-details')
-    });
+    let thisCard = $(this), thisCardContent = $(this).children('.card-content');
+
+    thisCardContent.toggleClass('view-card-details');
+
+    $('.card-content').not(thisCardContent).removeClass('view-card-details');
+
+  });
+
+
+  $('.view-more').click(() => {
+    let txt = $('#view-more-content').text();
+
+    if(txt == "View More"){
+      $('#view-more-content').text('View Less')
+
+      $('.hidden-card').css({ display: "block" });
+      }
+        else {
+      $('#view-more-content').text('View More');
+
+      $('.hidden-card').css({ display: "none" });
+    }
+  })
 
 });
 
@@ -101,6 +119,21 @@ function viewTab(tabName, tabHead) {
   $('.tab').css({ color: "var(--primary-text)" });
   $('#' + tabHead).css({ color: "var(--red)" });
 
-  $('.tab-contents').css({ display: "none", opacity: "0" });
-  $('.' + tabName).css({ display: "block", opacity: "1" });
+  $('.tab-contents').css({ display: "none" });
+  $('.' + tabName).css({ display: "block" });
+}
+
+function viewProjectTab(tabName, tabHead) {
+
+  let noOfProjects=$('.' + tabName+'> .project-card').length;
+  
+  noOfProjects>=3?$('.view-more').css({ display: "flex" }) : $('.view-more').css({ display: "none" });
+  
+
+  $('.project-tab').removeClass('active-project');
+  $('#' + tabHead).toggleClass('active-project');
+
+  $('.project-content').css({ display: "none" });
+  $('.' + tabName).css({ display: "grid" });
+
 }

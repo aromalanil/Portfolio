@@ -6,7 +6,7 @@
 <html lang="en">
 
 <head>
-    
+
     <!-- ============ General Meta Data ============= -->
     <title>Aromal Anil | Web Developer - Android Developer</title>
 
@@ -18,7 +18,7 @@
     <meta name="coverage" content="Worldwide">
     <meta name="creator" content="Aromal Anil">
     <meta name="author" content="Aromal Anil">
-    <meta name="theme-color" content="#294572"/>
+    <meta name="theme-color" content="#294572" />
     <link rel="manifest" href="/site.webmanifest">
     <!-- ========== General Meta Data Ends =========== -->
 
@@ -57,7 +57,7 @@
 
 
     <!-- ============= Linking jQuery ============== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- ========== Linking jQuery Ends ============ -->
 
 
@@ -114,7 +114,8 @@
                 <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
                 <li class="nav-link"><a href="#">Blog</a></li>
             </ul>
-            <div id="nav-btn" target="_blank" rel="noopener" onclick="window.open('mailto:aromalanilkannan@gmail.com');">
+            <div id="nav-btn" target="_blank" rel="noopener"
+                onclick="window.open('mailto:aromalanilkannan@gmail.com');">
                 <p>Let's Talk</p>
             </div>
         </div>
@@ -133,18 +134,24 @@
 
     <!-- ============== Side ADD-ONS Starts ============= -->
     <div class="email add-on">
-        <a href="mailto:aromalanilkannan@gmail.com" target="_blank" rel="noopener" class="mail" aria-label="email" data-balloon-pos="left">aromalanilkannan@gmail.com</a>
+        <a href="mailto:aromalanilkannan@gmail.com" target="_blank" rel="noopener" class="mail" aria-label="email"
+            data-balloon-pos="left">aromalanilkannan@gmail.com</a>
         <div class="mail-line"></div>
     </div>
 
     <div class="social add-on">
-        <a href="https://www.github.com/aromalanil" target="_blank" rel="noopener" aria-label="Github" data-balloon-pos="right"><i class="fab fa-github social-i"></i></a>
-        <a href="https://www.linkedin.com/in/aromalanil" target="_blank" rel="noopener" aria-label="Linkedin" data-balloon-pos="right"><i class="fab fa-linkedin-in social-i"></i></a>
-        <a href="https://stackoverflow.com/users/story/12292984" target="_blank" rel="noopener" aria-label="Stackoverflow" data-balloon-pos="right"><i
-                class="fab fa-stack-overflow social-i"></i></a>
-        <a href="https://www.twitter.com/aromalanil5" target="_blank" rel="noopener" aria-label="Twitter" data-balloon-pos="right"><i class="fab fa-twitter social-i"></i></a>
-        <a href="https://www.dribbble.com/aromalanil" target="_blank" rel="noopener" aria-label="Dribbble" data-balloon-pos="right"><i class="fab fa-dribbble social-i"></i></a>
-        <a href="https://www.medium.com/@aromalanil" target="_blank" rel="noopener" aria-label="Medium" data-balloon-pos="right"><i class="fab fa-medium-m social-i"></i></a>
+        <a href="https://www.github.com/aromalanil" target="_blank" rel="noopener" aria-label="Github"
+            data-balloon-pos="right"><i class="fab fa-github social-i"></i></a>
+        <a href="https://www.linkedin.com/in/aromalanil" target="_blank" rel="noopener" aria-label="Linkedin"
+            data-balloon-pos="right"><i class="fab fa-linkedin-in social-i"></i></a>
+        <a href="https://stackoverflow.com/users/story/12292984" target="_blank" rel="noopener"
+            aria-label="Stackoverflow" data-balloon-pos="right"><i class="fab fa-stack-overflow social-i"></i></a>
+        <a href="https://www.twitter.com/aromalanil5" target="_blank" rel="noopener" aria-label="Twitter"
+            data-balloon-pos="right"><i class="fab fa-twitter social-i"></i></a>
+        <a href="https://www.dribbble.com/aromalanil" target="_blank" rel="noopener" aria-label="Dribbble"
+            data-balloon-pos="right"><i class="fab fa-dribbble social-i"></i></a>
+        <a href="https://www.medium.com/@aromalanil" target="_blank" rel="noopener" aria-label="Medium"
+            data-balloon-pos="right"><i class="fab fa-medium-m social-i"></i></a>
 
         <div class="social-line"></div>
     </div>
@@ -196,7 +203,8 @@
         <div class="about-content">
             <div class="about-brief">
                 <h1 data-aos="fade-left">About Me</h1>
-                <p data-aos="fade-left">I am a Front End Web Developer & Android App Developer with industrial experience
+                <p data-aos="fade-left">I am a Front End Web Developer & Android App Developer with industrial
+                    experience
                     building websites and mobile applications. I specialize in JavaScript and have professional
                     experience working with Java and C. I also have experience working with Android Studio, Node.js &
                     React.</p>
@@ -211,7 +219,7 @@
                 </ul>
 
                 <div class="tab-contents skills" id="skills">
-                    <div class="tab-content" data-aos="fade-left" >
+                    <div class="tab-content" data-aos="fade-left">
                         <h3>Frontend Development</h3>
                         <p>Creating optimized & responsive websites/webapps</p>
                     </div>
@@ -283,73 +291,353 @@
         <h3>Here are some of my recent works</h3>
 
 
+        <ul class="project-tabs">
+            <li class="project-tab active-project" id="all-project-tab"
+                onclick="viewProjectTab('all-works','all-project-tab')">All</li>
+            <li class="project-tab" id="website-project-tab"
+                onclick="viewProjectTab('web-works','website-project-tab')">Websites</li>
+            <li class="project-tab" id="android-project-tab"
+                onclick="viewProjectTab('android-works','android-project-tab')">Android</li>
+            <li class="project-tab" id="other-project-tab" onclick="viewProjectTab('other-works','other-project-tab')">
+                Other</li>
+        </ul>
+
+
         <div class="works">
-            
-            <div class="all-works">
 
-                
-                    <div class="project-card" >
-                        <img src="./assets/images/projects/lumidex.jpg" alt="JavaScript Documentation Website" class="project-img">
-                        <div class="card-content" id="content-card">
-                            <h4>JS Documentation</h4>
-                            <h5><i class="website-i"></i>Website</h5>
-                            <p>This is an unofficial documentation page of Javascript Language.</p>
-                            <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery</p>
+            <div class="all-works project-content">
 
-                            <div class="card-icons">
-                            <div class="card-icon link" rel="noopener" onclick="window.open('https://github.com/aromalanil/LumiDex');">
+                <div class="project-card">
+                    <img src="./assets/images/projects/lumidex.jpg" alt="Lumidex Website" class="project-img">
+                    <div class="card-content">
+                        <h4>Lumidex Landing Page</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is a demo landing page made as part of an internship assignment.</p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/LumiDex');">
                                 <i class="fab fa-github card-i"></i>
                             </div>
-                            <div class="card-icon link demo" rel="noopener" onclick="window.open('https://lumidex.netlify.com/');">
+                            <div class="card-icon link demo" rel="noopener"
+                                onclick="window.open('https://lumidex.netlify.com/');">
                                 <i class="fas fa-link card-i"></i>
                             </div>
-                        </div>
-                        </div>
-                    </div>
-                
-
-                
-                    <div class="project-card" >
-                        <img src="./assets/images/projects/lumidex.jpg" alt="JavaScript Documentation Website" class="project-img">
-                        <div class="card-content" id="content-card">
-                            <h4>JS Documentation</h4>
-                            <h5><i class="website-i"></i>Website</h5>
-                            <p>This is an unofficial documentation page of Javascript Language.</p>
-                            <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery</p>
-
-                            <div class="card-icons">
-                            <div class="card-icon link" rel="noopener" onclick="window.open('https://github.com/aromalanil/LumiDex');">
-                                <i class="fab fa-github card-i"></i>
-                            </div>
-                            <div class="card-icon link demo" rel="noopener" onclick="window.open('https://lumidex.netlify.com/');">
-                                <i class="fas fa-link card-i"></i>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                
-
-                
-                    <div class="project-card" >
-                        <img src="./assets/images/projects/lumidex.jpg" alt="JavaScript Documentation Website" class="project-img">
-                        <div class="card-content" id="content-card">
-                            <h4>JS Documentation</h4>
-                            <h5><i class="website-i"></i>Website</h5>
-                            <p>This is an unofficial documentation page of Javascript Language.</p>
-                            <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery</p>
-
-                            <div class="card-icons">
-                            <div class="card-icon link" rel="noopener" onclick="window.open('https://github.com/aromalanil/LumiDex');">
-                                <i class="fab fa-github card-i"></i>
-                            </div>
-                            <div class="card-icon link demo" rel="noopener" onclick="window.open('https://lumidex.netlify.com/');">
-                                <i class="fas fa-link card-i"></i>
-                            </div>
-                        </div>
                         </div>
                     </div>
                 </div>
-            
+
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/tic_tac_toe.jpg" alt="Tic Tac Toe" class="project-img">
+                    <div class="card-content">
+                        <h4>Tic Tac Toe</h4>
+                        <h5><i class="website-i"></i>Android App</h5>
+                        <p>A small game to kill the boredom.</p>
+                        <p><br><strong>Technologies Used :</strong> Android Studio, Java and Adobe XD</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/Tic-Tac-Toe');">
+                                <i class="fab fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon link demo" rel="noopener"
+                                onclick="window.open('https://drive.google.com/open?id=1_PEaFPvvivFfIGHOwiRne1Xcmfqy7F4w');">
+                                <i class="fas fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/js-documentation.png" alt="JavaScript Documentation Website"
+                        class="project-img">
+                    <div class="card-content">
+                        <h4>JS Documentation</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is an unofficial documentation page of Javascript Language.</p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/Javascript-Documentation');">
+                                <i class="fab fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon link demo" rel="noopener"
+                                onclick="window.open('https://js-documentation.netlify.com/');">
+                                <i class="fas fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card hidden-card">
+                    <img src="./assets/images/projects/apple-card.png" alt="Apple Card Website" class="project-img">
+                    <div class="card-content">
+                        <h4>Apple Card Website</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is a concept landing page for Apple Card made as part of a course from freecodecamp.org
+                        </p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/Apple-Card-Concept');">
+                                <i class="fab fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon link demo" rel="noopener"
+                                onclick="window.open('https://aromalanil.github.io/Apple-Card-Concept/');">
+                                <i class="fas fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card hidden-card">
+                    <img src="./assets/images/projects/srms.jpg" alt="SRMS" class="project-img">
+                    <div class="card-content">
+                        <h4>SRMS</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>A Java Application to manage Student Records,made as part of KTU mini project
+                        </p>
+                        <p><br><strong>Technologies Used :</strong> Java, MySQL and NetBeans IDE</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/Apple-Card-Concept');">
+                                <i class="fab fa-github card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card hidden-card">
+                    <img src="./assets/images/projects/all_in_one.png" alt="All In One:Utility App" class="project-img">
+                    <div class="card-content">
+                        <h4>All In One</h4>
+                        <h5><i class="website-i"></i>Android App</h5>
+                        <p>A simple utility app which perform five utilities like Unit Conversion, Flashlight etc.</p>
+                        <p><br><strong>Technologies Used :</strong> Java & Android Studio</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/All_In_One#1-splitbill');">
+                                <i class="fab fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon link demo" rel="noopener"
+                                onclick="window.open('https://drive.google.com/open?id=1aDDKDexAhqhU65-iE1OmOSVBLqV_l-4s');">
+                                <i class="fas fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card hidden-card">
+                    <img src="./art/home.jpg" alt="Personal Portfolio" class="project-img">
+                    <div class="card-content">
+                        <h4>Personal Portfolio</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is a webapp made to showcase all my works.</p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/My-Portfolio');">
+                                <i class="fab fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon link demo" rel="noopener"
+                                onclick="window.open('https://aromalanil.netlify.com/');">
+                                <i class="fas fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="project-content web-works">
+
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/js-documentation.png" alt="JavaScript Documentation Website"
+                        class="project-img">
+                    <div class="card-content">
+                        <h4>JS Documentation</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is an unofficial documentation page of Javascript Language.</p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/Javascript-Documentation');">
+                                <i class="fab fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon link demo" rel="noopener"
+                                onclick="window.open('https://js-documentation.netlify.com/');">
+                                <i class="fas fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/lumidex.jpg" alt="Lumidex Website" class="project-img">
+                    <div class="card-content">
+                        <h4>Lumidex Landing Page</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is a demo landing page made as part of an internship assignment.</p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/LumiDex');">
+                                <i class="fab fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon link demo" rel="noopener"
+                                onclick="window.open('https://lumidex.netlify.com/');">
+                                <i class="fas fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/apple-card.png" alt="Apple Card Website" class="project-img">
+                    <div class="card-content">
+                        <h4>Apple Card Website</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is a concept landing page for Apple Card made as part of a course from freecodecamp.org
+                        </p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery
+                            etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/Apple-Card-Concept');">
+                                <i class="fab fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon link demo" rel="noopener"
+                                onclick="window.open('https://aromalanil.github.io/Apple-Card-Concept/');">
+                                <i class="fas fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card hidden-card">
+                    <img src="./art/home.jpg" alt="Personal Portfolio" class="project-img">
+                    <div class="card-content">
+                        <h4>Personal Portfolio</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>This is a webapp made to showcase all my works.</p>
+                        <p><br><strong>Technologies Used :</strong> HTML, &nbsp;CSS, &nbsp; JavaScript, &nbsp; jQuery,
+                            Adobe XD etc.</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/My-Portfolio');">
+                                <i class="fab fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon link demo" rel="noopener"
+                                onclick="window.open('https://aromalanil.netlify.com/');">
+                                <i class="fas fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-content android-works">
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/all_in_one.png" alt="All In One:Utility App" class="project-img">
+                    <div class="card-content">
+                        <h4>All In One</h4>
+                        <h5><i class="website-i"></i>Android App</h5>
+                        <p>A simple utility app which perform five utilities like Unit Conversion, Flashlight etc.</p>
+                        <p><br><strong>Technologies Used :</strong> Java & Android Studio</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/All_In_One#1-splitbill');">
+                                <i class="fab fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon link demo" rel="noopener"
+                                onclick="window.open('https://drive.google.com/open?id=1aDDKDexAhqhU65-iE1OmOSVBLqV_l-4s');">
+                                <i class="fas fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/tic_tac_toe.jpg" alt="Tic Tac Toe" class="project-img">
+                    <div class="card-content">
+                        <h4>Tic Tac Toe</h4>
+                        <h5><i class="website-i"></i>Android App</h5>
+                        <p>A small game to kill the boredom.</p>
+                        <p><br><strong>Technologies Used :</strong> Android Studio, Java and Adobe XD</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/Tic-Tac-Toe');">
+                                <i class="fab fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon link demo" rel="noopener"
+                                onclick="window.open('https://drive.google.com/open?id=1_PEaFPvvivFfIGHOwiRne1Xcmfqy7F4w');">
+                                <i class="fas fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-content other-works">
+
+                <div class="project-card">
+                    <img src="./assets/images/projects/srms.jpg" alt="SRMS" class="project-img">
+                    <div class="card-content">
+                        <h4>SRMS</h4>
+                        <h5><i class="website-i"></i>Website</h5>
+                        <p>A Java Application to manage Student Records,made as part of KTU mini project
+                        </p>
+                        <p><br><strong>Technologies Used :</strong> Java, MySQL and NetBeans IDE</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon link" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/SRMS');">
+                                <i class="fab fa-github card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="btn view-more">
+                <p id="view-more-content">View More</p>
+            </div>
 
         </div>
 
