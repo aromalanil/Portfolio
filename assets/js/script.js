@@ -2,6 +2,7 @@
  * @author Aromal Anil <aromalanilkannan@gmail.com>
  */
 
+
 //Hiding the Preloader
 $('body').css("overflow", "hidden");
 $(window).on('load', () => {
@@ -96,12 +97,12 @@ $(document).ready(() => {
   $('.view-more').click(() => {
     let txt = $('#view-more-content').text();
 
-    if(txt == "View More"){
+    if (txt == "View More") {
       $('#view-more-content').text('View Less')
 
       $('.hidden-card').css({ display: "block" });
-      }
-        else {
+    }
+    else {
       $('#view-more-content').text('View More');
 
       $('.hidden-card').css({ display: "none" });
@@ -123,12 +124,14 @@ function viewTab(tabName, tabHead) {
   $('.' + tabName).css({ display: "block" });
 }
 
+
+
 function viewProjectTab(tabName, tabHead) {
 
-  let noOfProjects=$('.' + tabName+'> .project-card').length;
-  
-  noOfProjects>=3?$('.view-more').css({ display: "flex" }) : $('.view-more').css({ display: "none" });
-  
+  let noOfProjects = $('.' + tabName + '> .project-card').length;
+
+  noOfProjects >= 3 ? $('.view-more').css({ display: "flex" }) : $('.view-more').css({ display: "none" });
+
 
   $('.project-tab').removeClass('active-project');
   $('#' + tabHead).toggleClass('active-project');
