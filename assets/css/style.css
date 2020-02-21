@@ -3,7 +3,7 @@ Style Sheet for Portfolio Website of Aromal Anil
 
 version: 1.0
 Start Date : 09-02-2020
-last modified: 16-02-2020 by Aromal Anil
+last modified: 21-02-2020 by Aromal Anil
 author: Aromal Anil
 email: aromalanilkannan@gmail.com
 website: https://aromalanil.netlify.com/
@@ -17,6 +17,7 @@ website: https://aromalanil.netlify.com/
 
 :root {
   --red: #fe3e57;
+  --light-red: #e94d62;
   --white: #fffffe;
   --dim-white: #e1e1e1;
   --primary-text: rgb(230, 241, 255);
@@ -58,7 +59,8 @@ p {
   font-size: 1.8rem;
   font-family: var(--open-sans);
   text-align: justify;
-  color: var(--secondary-text);
+  line-height: 3.3rem;
+  color: var(--territory-text);
   letter-spacing: 0.5px;
 }
 
@@ -66,7 +68,7 @@ li {
   font-size: 1.9rem;
   font-family: var(--open-sans);
   text-align: justify;
-  color: var(--secondary-text);
+  color: var(--territory-text);
 }
 
 /* Scrollbar Styling */
@@ -387,7 +389,7 @@ mail::before {
 }
 
 .about-tabs {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .tabs {
@@ -447,7 +449,7 @@ mail::before {
 .tab-content h3 {
   font-family: var(--open-sans);
   font-weight: 500;
-  color: var(--territory-text);
+  color: var(--primary-text);
 }
 .tab-content p {
   font-size: 1.5rem;
@@ -480,7 +482,7 @@ mail::before {
 .portfolio h3 {
   margin-top: 1.5rem;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--territory-text);
 }
 
@@ -545,7 +547,7 @@ mail::before {
   height: 1px;
   left: 0;
   right: 0;
-  bottom: 1.5px;
+  bottom: 0px;
   background-color: var(--primary-text);
 }
 
@@ -559,7 +561,7 @@ mail::before {
   height: 4px;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -1.5px;
   background-color: var(--red);
   border-radius: 5px;
 }
@@ -605,6 +607,7 @@ mail::before {
 
 .card-content p {
   font-size: 1.5rem;
+  line-height: 2.2rem;
   text-align: left;
   font-weight: 400;
   color: var(--primary-text);
@@ -636,7 +639,7 @@ mail::before {
 }
 
 .card-icon {
-  position: static;
+  cursor: pointer;
   margin-right: 20px;
   width: 5rem;
   height: 5rem;
@@ -672,7 +675,153 @@ mail::before {
   background-color: var(--red);
 }
 .view-more p {
+  font-size: 1.6rem;
+}
+
+#contact {
+  background-color: var(--primary-background);
+}
+
+#contact h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.contact-wrapper {
+  margin-top: 5rem;
+  display: flex;
+  width: 100%;
+}
+
+.contact-details {
+  margin-top: 8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-container {
+  cursor: pointer;
+  margin-bottom: 5rem;
+  border: 1px solid var(--white);
+  width: 90%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+}
+
+.contact-icon {
+  margin: 2rem 0;
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-icon i {
+  font-size: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact-info a {
+  margin-left: 3rem;
+  margin-bottom: 0.5rem;
   font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--primary-text);
+  transition: 0.5s;
+}
+
+.contact-social {
+  font-size: 4rem;
+}
+
+.social-media-pack {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.s-head{
+ 
+    margin-top: 5rem;
+  
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  font-family: var(--montserrat);
+  padding-left: 1.7rem;
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  height: 5.5rem;
+  background-color: var(--secondary-button);
+  border: none;
+  border-radius: 4px;
+}
+
+/* Removing autocomplete styling */
+
+@-webkit-keyframes autofill {
+  0%,
+  100% {
+    color: var(--white);
+    background: var(--secondary-button);
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+/* Removing autocomplete styling Finished*/
+
+.input::placeholder {
+  font-size: 1.5rem;
+  color: rgba(255, 251, 251, 0.473);
+}
+
+.input:focus {
+  outline: none;
+}
+
+#message {
+  height: 20rem;
+  resize: vertical;
+  padding-top: 1.7rem;
+}
+
+.submit {
+  font-family: var(--montserrat);
+  margin-top: 3rem;
+  background-color: var(--red);
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--white);
+  width: 15rem;
+  height: 4.8rem;
 }
 
 @media only screen and (max-width: 1470px) {
@@ -847,6 +996,12 @@ mail::before {
   .tab {
     font-size: 2.2rem;
   }
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact-details {
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -934,6 +1089,14 @@ mail::before {
   }
   .project-card:hover .project-img {
     transform: scale(1.07);
+  }
+
+  .contact-container:hover {
+    background-color: var(--red);
+    border: 1px solid transparent;
+  }
+  .contact-container:hover .contact-icon {
+    border: 2px solid var(--white);
   }
 }
 
