@@ -28,6 +28,7 @@ website: https://aromalanil.netlify.com/
   --secondary-background: rgb(13, 34, 68);
   --secondary-button: #294572;
   --dark-shadow: #051020;
+  --footer: #131d2c;
 
   --montserrat: "Montserrat", sans-serif;
   --open-sans: "Open Sans", sans-serif;
@@ -682,10 +683,13 @@ mail::before {
   background-color: var(--primary-background);
 }
 
-#contact h3 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
+.contact h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.contact h1 {
+  margin-bottom: 4rem;
 }
 
 .contact-wrapper {
@@ -695,7 +699,7 @@ mail::before {
 }
 
 .contact-details {
-  margin-top: 2.5rem;
+  margin-top: 6rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -714,12 +718,18 @@ mail::before {
   transition: 0.5s ease;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+.phone {
+  padding: 0 11.1rem;
+}
 
 .contact-icon {
   margin: 2rem 0;
-  width: 5rem;
+  width: 5rem !important;
   height: 5rem;
   border: 2px solid var(--primary-text);
+  background-color: var(--primary-text);
+  color: var(--primary-background);
+  transition: 0.5s;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -737,7 +747,7 @@ mail::before {
 
 .contact-info a {
   margin-left: 3rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
   text-decoration: none;
   color: var(--primary-text);
@@ -750,8 +760,9 @@ mail::before {
 }
 
 .s-head {
-  margin-top: 5rem;
+  margin-top: 4rem;
   text-align: right;
+  margin-bottom: 3rem;
 }
 
 .social-media-pack {
@@ -766,16 +777,17 @@ mail::before {
   width: 5rem;
   height: 5rem;
   text-align: center;
-  border: 1.3px solid var(--primary-text);
+  background-color: var(--primary-text);
   border-radius: 50%;
   transition: 0.5s;
   margin-left: 2rem;
 }
 
 .contact-social {
-  font-size: 2.3rem;
-  line-height: 4.8rem;
-  color: var(--primary-text);
+  font-size: 2.6rem;
+  line-height: 5.1rem;
+  color: var(--primary-background);
+  transition: 0.5s;
 }
 
 .contact-form {
@@ -783,6 +795,10 @@ mail::before {
   flex-direction: column;
   width: 100%;
   position: relative;
+}
+
+.form-head {
+  margin-bottom: 0;
 }
 
 .input {
@@ -794,7 +810,7 @@ mail::before {
   height: 5.5rem;
   background-color: var(--secondary-button);
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 /* Removing autocomplete styling */
@@ -817,7 +833,7 @@ input:-webkit-autofill {
 
 .input::placeholder {
   font-size: 1.5rem;
-  color: rgba(255, 251, 251, 0.473);
+  color: rgba(255, 251, 251, 0.589);
 }
 
 .input:focus {
@@ -836,10 +852,52 @@ input:-webkit-autofill {
   background-color: var(--red);
   border: none;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--white);
   width: 15rem;
   height: 4.8rem;
+}
+
+.footer {
+  padding: 3rem 15%;
+  padding-top: 4rem;
+  background-color: var(--footer);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer hr {
+  border: none;
+  height: 0.1rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.171);
+  margin-bottom: 1.5rem;
+}
+
+.footer-icons {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.footer-i {
+  color: var(--dim-white);
+  font-size: 2.5rem;
+  padding: 0 2rem;
+}
+
+.copyright {
+  font-family: var(--open-sans);
+  font-size: 1.6rem;
+}
+
+.footer p {
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 1470px) {
@@ -1021,6 +1079,9 @@ input:-webkit-autofill {
     margin-top: 8rem;
     align-items: center;
   }
+  .contact-container {
+    width: auto;
+  }
   .s-head {
     text-align: center;
     margin-top: 2rem;
@@ -1062,7 +1123,6 @@ input:-webkit-autofill {
   .tab-content {
     height: 70px;
   }
-
   .card-content {
     padding-top: 20px;
   }
@@ -1091,7 +1151,7 @@ input:-webkit-autofill {
   .btn p {
     font-size: 4vw;
   }
-  
+
   .contact-container {
     padding: 0 7vw;
   }
@@ -1127,14 +1187,17 @@ input:-webkit-autofill {
 
   .contact-container:hover {
     background-color: var(--red);
-    border: 1px solid transparent;
+    border: 1.5px solid var(--red);
   }
   .contact-container:hover .contact-icon {
     border: 2px solid var(--white);
+    color: var(--red);
   }
   .social-media-pack a:hover {
     background-color: var(--red);
-    border: 1px solid transparent;
+  }
+  .social-media-pack a:hover .contact-social {
+    color: var(--primary-text);
   }
 }
 
