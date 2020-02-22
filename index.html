@@ -175,7 +175,7 @@
                     <div class="btn primary" onclick="window.open('./assets/resources/resume.pdf')">
                         <p>Download CV</p>
                     </div>
-                    <div class=" btn secondary">
+                    <div class=" btn secondary" onclick="window.open('#contact','_self')">
                         <p>Contact me</p>
                     </div>
                 </div>
@@ -654,22 +654,18 @@
         <h1>Contact Me</h1>
         <div class="contact-wrapper">
 
-            <form action="POST" class="contact-form">
+            <form name="contact" action="POST" class="contact-form" data-netlify="true">
 
-                <h3>Drop Me A Note</h3>
-
-
-                <input placeholder="Name" class="input" type="text" name="name" id="name" autocomplete="off" />
+                <input required placeholder="Name" class="input" type="text" name="name" id="name" autocomplete="off" />
 
 
-                <input placeholder="Email Address" class="input" type="email" name="email" id="email"
+                <input required placeholder="Email Address" class="input" type="email" name="email" id="email"
                     autocomplete="off" />
-
 
                 <input placeholder="Subject" class="input" type="text" name="subject" id="subject" autocomplete="off" />
 
 
-                <textarea placeholder="Your Message" class="input" id="message"></textarea>
+                <textarea required placeholder="Your Message" class="input" id="message"></textarea>
 
                 <button class="submit btn" type="submit">Send Mail</button>
 
@@ -694,21 +690,31 @@
                     </div>
                 </div>
 
-                <div >
-                    <h3 class="s-head">Social Media</h3>
+                <div class="s-medias">
+                    <h3 class="s-head">Catch Me On</h3>
 
                     <div class="social-media-pack">
                         <a href="https://www.facebook.com/aromal.anil.369" target="_blank" rel="noopener">
-                            <i class="fa fa-facebook social-i contact-social"></i>
+                            <i class="fa fa-facebook contact-social"></i>
+                        </a>
+                        <a href="https://www.instagram.com/lina.lamora/" target="_blank" rel="noopener">
+                            <i class="fa fa-instagram contact-social"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=919207980389&text=Hi%20Aromal%20%F0%9F%91%8B"
+                            target="_blank" rel="noopener">
+                            <i class="fa fa-whatsapp contact-social"></i>
                         </a>
                         <a href="https://www.twitter.com/aromalanil5" target="_blank" rel="noopener">
-                            <i class="fa fa-twitter social-i contact-social"></i>
+                            <i class="fa fa-twitter  contact-social"></i>
                         </a>
-                        <a href=https://api.whatsapp.com/send?phone=919207980389" target="_blank" rel="noopener">
-                            <i class="fa fa-whatsapp social-i contact-social"></i>
-                        </a>   
+                        <a id="telegram" href="https://telegram.me/aromalanil" target="_blank" rel="noopener">
+                            <i class="fa fa-telegram contact-social"></i>
+                        </a>
+                        <a  href="https://linkedin.com/in/aromalanil/" target="_blank" rel="noopener">
+                            <i class="fa fa-linkedin contact-social"></i>
+                        </a>
                         <a href="https://www.github.com/aromalanil" target="_blank" rel="noopener">
-                            <i class="fa fa-github social-i contact-social"></i>
+                            <i class="fa fa-github contact-social"></i>
                         </a>
                     </div>
                 </div>

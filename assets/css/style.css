@@ -689,13 +689,13 @@ mail::before {
 }
 
 .contact-wrapper {
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: flex;
   width: 100%;
 }
 
 .contact-details {
-  margin-top: 8rem;
+  margin-top: 2.5rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -705,20 +705,21 @@ mail::before {
 .contact-container {
   cursor: pointer;
   margin-bottom: 5rem;
-  border: 1px solid var(--white);
-  width: 90%;
+  border: 1.5px solid var(--primary-text);
+  padding: 0 5rem;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.5s ease;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .contact-icon {
   margin: 2rem 0;
   width: 5rem;
   height: 5rem;
-  border: 1px solid var(--white);
+  border: 2px solid var(--primary-text);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -731,33 +732,50 @@ mail::before {
 .contact-info {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 }
 
 .contact-info a {
   margin-left: 3rem;
-  margin-bottom: 0.5rem;
   font-size: 1.5rem;
   font-weight: 600;
   text-decoration: none;
   color: var(--primary-text);
   transition: 0.5s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.contact-social {
-  font-size: 4rem;
+.s-medias {
+  width: 100%;
+}
+
+.s-head {
+  margin-top: 5rem;
+  text-align: right;
 }
 
 .social-media-pack {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
-.s-head{
- 
-    margin-top: 5rem;
-  
+.social-media-pack a {
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  border: 1.3px solid var(--primary-text);
+  border-radius: 50%;
+  transition: 0.5s;
+  margin-left: 2rem;
+}
+
+.contact-social {
+  font-size: 2.3rem;
+  line-height: 4.8rem;
+  color: var(--primary-text);
 }
 
 .contact-form {
@@ -1000,7 +1018,19 @@ input:-webkit-autofill {
     flex-direction: column;
   }
   .contact-details {
+    margin-top: 8rem;
     align-items: center;
+  }
+  .s-head {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .social-media-pack {
+    justify-content: center;
+  }
+  .social-media-pack a {
+    margin: auto 1rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -1061,6 +1091,10 @@ input:-webkit-autofill {
   .btn p {
     font-size: 4vw;
   }
+  
+  .contact-container {
+    padding: 0 7vw;
+  }
 }
 
 /* Remove hovering on unsupported devices */
@@ -1097,6 +1131,10 @@ input:-webkit-autofill {
   }
   .contact-container:hover .contact-icon {
     border: 2px solid var(--white);
+  }
+  .social-media-pack a:hover {
+    background-color: var(--red);
+    border: 1px solid transparent;
   }
 }
 
