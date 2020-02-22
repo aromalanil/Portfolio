@@ -3,7 +3,7 @@ Style Sheet for Portfolio Website of Aromal Anil
 
 version: 1.0
 Start Date : 09-02-2020
-last modified: 21-02-2020 by Aromal Anil
+last modified: 22-02-2020 by Aromal Anil
 author: Aromal Anil
 email: aromalanilkannan@gmail.com
 website: https://aromalanil.netlify.com/
@@ -564,7 +564,7 @@ mail::before {
   height: 4px;
   left: 0;
   right: 0;
-  bottom: -.5px;
+  bottom: -0.5px;
   background-color: var(--red);
   border-radius: 5px;
 }
@@ -906,9 +906,9 @@ input:-webkit-autofill {
   font-size: 1.2rem;
 }
 
-.up-btn-wrapper{
+.up-btn-wrapper {
   position: absolute;
-  top:-2.3rem;
+  top: -2.3rem;
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
@@ -916,16 +916,15 @@ input:-webkit-autofill {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.up-btn{
+.up-btn {
   position: relative;
-  top:-.3rem;
+  top: -0.3rem;
   font-size: 3.5rem;
   line-height: 5rem;
   width: 5rem;
   color: var(--dim-white);
   text-align: center;
 }
-
 
 @media only screen and (max-width: 1470px) {
   .section {

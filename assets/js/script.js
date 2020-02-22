@@ -54,9 +54,6 @@ $(document).ready(() => {
   });
 
 
-
-
-
   //Changing Title Effect
   const b = baffle(".title");
   b.set({
