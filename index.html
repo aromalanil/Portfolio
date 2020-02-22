@@ -654,7 +654,7 @@
         <h1>Contact Me</h1>
         <div class="contact-wrapper">
 
-            <form name="contact" action="POST" class="contact-form" data-netlify="true" >
+            <form name="contact" action="POST" class="contact-form" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true" >
 
                 <input required placeholder="Name" class="input" type="text" name="name" id="name" autocomplete="off" />
 
@@ -666,6 +666,8 @@
 
 
                 <textarea required placeholder="Your Message" class="input" id="message"></textarea>
+
+                <div data-netlify-recaptcha="true"></div>
 
                 <button class="submit btn" type="submit">Send Mail</button>
 
