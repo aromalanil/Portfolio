@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /assets/css/hamburger.css
+Disallow: /assets/css/preloader.css
+Disallow: /assets/libraries/baffle.js
+Disallow: /netlify.toml
+Disallow: /_redirects
