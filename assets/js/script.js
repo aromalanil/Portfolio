@@ -9,8 +9,6 @@ $(window).on('load', () => {
   $('.loader').fadeOut();
   $('.loader-body').delay(350).fadeOut('slow');
   $('body').delay(350).css({ 'overflow': 'visible' });
-
-  AOS.refresh();
 });
 
 

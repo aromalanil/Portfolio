@@ -77,8 +77,6 @@
 
     <!-- =============== Linking CSS =============== -->
 
-    <!-- Animate On Scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!-- Balloon CSS : For Tooltips -->
     <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css">
     <!-- Preloader CSS -->
@@ -198,14 +196,14 @@
     <!-- ============ About Section Starts ============== -->
     <section class="about section" id="about">
 
-        <div class="about-img" data-aos="fade-right" data-aos-anchor-placement="center-bottom">
+        <div class="about-img">
             <img src="./assets/images/aromal_anil.jpeg" alt="Aromal Anil">
         </div>
 
         <div class="about-content">
             <div class="about-brief">
-                <h1 data-aos="fade-left">About Me</h1>
-                <p data-aos="fade-left">I am a Front End Web Developer & Android App Developer with industrial
+                <h1>About Me</h1>
+                <p>I am a Front End Web Developer & Android App Developer with industrial
                     experience
                     building websites and mobile applications. I specialize in JavaScript and have professional
                     experience working with Java and C. I also have experience working with Android Studio, Node.js &
@@ -213,7 +211,7 @@
             </div>
 
             <div class="about-tabs">
-                <ul class="tabs" data-aos="fade-left">
+                <ul class="tabs">
                     <li class="tab" id="skill-head" onclick="viewTab('skills','skill-head')">Main Skills</li>
                     <li class="tab" id="exp-head" onclick="viewTab('experience','exp-head')">Experience</li>
                     <li class="tab" id="edu-head" onclick="viewTab('education','edu-head')">Education</li>
@@ -221,15 +219,15 @@
                 </ul>
 
                 <div class="tab-contents skills" id="skills">
-                    <div class="tab-content" data-aos="fade-left">
+                    <div class="tab-content">
                         <h3>Frontend Development</h3>
                         <p>Creating optimized & responsive websites/webapps</p>
                     </div>
-                    <div class="tab-content" data-aos="fade-left">
+                    <div class="tab-content">
                         <h3>Android Development</h3>
                         <p>Develop Native Android Applications</p>
                     </div>
-                    <div class="tab-content" data-aos="fade-left">
+                    <div class="tab-content">
                         <h3>UI/UX Design</h3>
                         <p>Loves to give users the right experience</p>
                     </div>
@@ -776,19 +774,8 @@
 
     <!-- Baffle JS -->
     <script src="./assets/libraries/baffle.js"></script>
-    <!-- Animate On Scroll JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom JS -->
     <script src="./assets/js/script.js"></script>
-    <script>
-        AOS.init({
-            easing: 'ease-out-back',
-            delay: 300,
-            duration: 900,
-            once: true,
-            disable: 'mobile'
-        });
-    </script>
 
     <!-- ============ Linking JS Ends ============= -->
 </body>

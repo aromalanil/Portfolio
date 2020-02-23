@@ -1167,6 +1167,9 @@ input:-webkit-autofill {
     color: var(--dim-white);
     margin-bottom: 20px;
   }
+  .contact-container {
+    padding: 0 7vw;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -1178,9 +1181,6 @@ input:-webkit-autofill {
     font-size: 4vw;
   }
 
-  .contact-container {
-    padding: 0 7vw;
-  }
   .portfolio h3{
     font-size: 2rem;
   }
