@@ -90,6 +90,7 @@ $(document).ready(() => {
   });
 
 
+  //Hiding extra cards in Portfolio
   $('.view-more').click(() => {
     let txt = $('#view-more-content').text();
 
