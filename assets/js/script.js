@@ -18,6 +18,7 @@ $(window).on('load', () => {
 $(document).ready(() => {
 
 
+
   //NavBar Drop Shadow on scroll
   $(window).scroll(function () {
     if ($(window).scrollTop() > 10) {

@@ -62,7 +62,6 @@ p {
   text-align: justify;
   line-height: 3.3rem;
   color: var(--territory-text);
-  letter-spacing: 0.5px;
 }
 
 li {
@@ -1180,6 +1179,16 @@ input:-webkit-autofill {
 
   .contact-container {
     padding: 0 7vw;
+  }
+}
+
+@media only screen and (min-height: 580px) and (max-width:500px)
+{
+  .main{
+    padding-top: 18vh;
+  }
+  .main-content{
+    padding-top: 3vh;
   }
 }
 
