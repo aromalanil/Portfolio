@@ -371,7 +371,9 @@ mail::before {
   min-height: 100vh;
   display: flex;
   height: 100%;
+  padding-bottom:0px;
   align-items: center;
+ 
 }
 .about-content {
   margin-left: 50px;
@@ -564,9 +566,8 @@ mail::before {
   height: 4px;
   left: 0;
   right: 0;
-  bottom: -0.5px;
+  bottom: -0.7px;
   background-color: var(--red);
-  border-radius: 5px;
 }
 
 /* Card UI */
@@ -1075,6 +1076,7 @@ input:-webkit-autofill {
   }
   .about {
     flex-direction: column;
+    padding-bottom: 0;
   }
   .about-content {
     margin-left: 0px;
@@ -1125,6 +1127,9 @@ input:-webkit-autofill {
   .main {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .about{
+    padding-bottom: 0;
   }
   .main-content h1 {
     font-size: 10vw;
