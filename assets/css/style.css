@@ -506,6 +506,7 @@ mail::before {
   grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
   gap: 30px;
   margin-top: 6rem;
+  width:100%;
 }
 .other-works {
   grid-template-columns: 36rem;
