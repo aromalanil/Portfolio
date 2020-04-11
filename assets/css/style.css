@@ -129,11 +129,6 @@ li {
   letter-spacing: 2px;
 }
 
-.mail::after,
-mail::before {
-  writing-mode: horizontal-tb;
-}
-
 .mail-line {
   width: 2px;
   height: 150px;
@@ -1123,6 +1118,12 @@ input:-webkit-autofill {
   .social-media-pack a {
     margin: auto 1rem;
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width:720px){
+  .other-works{
+    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
   }
 }
 

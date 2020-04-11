@@ -294,7 +294,7 @@
             <li class="project-tab active-project" id="all-project-tab"
                 onclick="viewProjectTab('all-works','all-project-tab')">All</li>
             <li class="project-tab" id="website-project-tab"
-                onclick="viewProjectTab('web-works','website-project-tab')">Websites</li>
+                onclick="viewProjectTab('web-works','website-project-tab')">Web</li>
             <li class="project-tab" id="android-project-tab"
                 onclick="viewProjectTab('android-works','android-project-tab')">Android</li>
             <li class="project-tab" id="other-project-tab" onclick="viewProjectTab('other-works','other-project-tab')">
@@ -327,7 +327,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <div class="project-card">
                     <img src="./assets/images/projects/tic_tac_toe.jpg" alt="Tic Tac Toe" class="project-img">
@@ -367,6 +366,27 @@
                             </div>
                             <div class="card-icon demo" rel="noopener"
                                 onclick="window.open('https://js-documentation.netlify.com/');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card hidden-card">
+                    <img src="./assets/images/projects/whack_a_mole.webp" alt="Whack A Mole !" class="project-img">
+                    <div class="card-content">
+                        <h4>Whack A Mole !</h4>
+                        <h5><i class="website-i"></i>React Web App</h5>
+                        <p>A classic "Whack A Mole" game made using React</p>
+                        <p><br><strong>Technologies Used :</strong> React.js, CSS3 and Javascript</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/Whack-A-Mole');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://hit-mole.netlify.com/');">
                                 <i class="fa fa-link card-i"></i>
                             </div>
                         </div>
@@ -487,6 +507,27 @@
                 </div>
 
                 <div class="project-card">
+                    <img src="./assets/images/projects/whack_a_mole.webp" alt="Whack A Mole !" class="project-img">
+                    <div class="card-content">
+                        <h4>Whack A Mole !</h4>
+                        <h5><i class="website-i"></i>React Web App</h5>
+                        <p>A classic "Whack A Mole" game made using React</p>
+                        <p><br><strong>Technologies Used :</strong> React.js, CSS3 and Javascript</p>
+
+                        <div class="card-icons">
+                            <div class="card-icon" rel="noopener"
+                                onclick="window.open('https://github.com/aromalanil/Whack-A-Mole');">
+                                <i class="fa fa-github card-i"></i>
+                            </div>
+                            <div class="card-icon demo" rel="noopener"
+                                onclick="window.open('https://hit-mole.netlify.com/');">
+                                <i class="fa fa-link card-i"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
                     <img src="./assets/images/projects/lumidex.jpg" alt="Lumidex Website" class="project-img">
                     <div class="card-content">
                         <h4>Lumidex Landing Page</h4>
@@ -510,7 +551,7 @@
 
 
 
-                <div class="project-card">
+                <div class="project-card hidden-card">
                     <img src="./assets/images/projects/apple-card.png" alt="Apple Card Website" class="project-img">
                     <div class="card-content">
                         <h4>Apple Card Website</h4>
@@ -771,9 +812,7 @@
     <script src="./assets/libraries/baffle.js"></script>
     <!-- Custom JS -->
     <script src="./assets/js/script.js"></script>
-    <!-- Lazy Loader (For Images) -->
-    <script src="./assets/libraries/lazysizes.js" async></script>
-
+    
     <!-- ============ Linking JS Ends ============= -->
 </body>
 
