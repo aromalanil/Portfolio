@@ -1122,8 +1122,8 @@ input:-webkit-autofill {
 }
 
 @media screen and (max-width:720px){
-  .other-works{
-    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  .all-works,.other-works{
+    grid-template-columns: 1fr;
   }
 }
 
