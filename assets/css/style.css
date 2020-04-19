@@ -533,6 +533,7 @@ li {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   position: relative;
 }
+
 .project-tab::after {
   content: "";
   position: absolute;
@@ -1208,6 +1209,9 @@ input:-webkit-autofill {
   .btn:hover {
     box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
   }
+  .project-tab:active {
+    background-color: var(--secondary-button);
+  }
   .view-card-details {
     height: 100%;
     border-top-left-radius: 5px;
@@ -1218,6 +1222,10 @@ input:-webkit-autofill {
 @media (hover: hover) {
   .card-icon:hover {
     transform: scale(1.08);
+  }
+
+  .project-tab:hover:not(.active-project) {
+    background-color: var(--secondary-button);
   }
   .project-card:hover .card-content {
     height: 100%;
