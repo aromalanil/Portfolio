@@ -5,4 +5,4 @@ Disallow: /assets/libraries/baffle.js
 Disallow: /netlify.toml
 Disallow: /_redirects
 
-Sitemap: https://www.aromalanil.me/sitemap.xml
+Sitemap: https://www.aromalanil.tech/sitemap.xml
