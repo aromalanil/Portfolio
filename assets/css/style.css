@@ -710,7 +710,7 @@ li {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .mail-id {
-  padding: 0 7.6rem;
+  padding: 0 5.3rem;
 }
 .phone {
   padding: 0 11.1rem;
@@ -774,7 +774,7 @@ li {
   background-color: var(--primary-text);
   border-radius: 50%;
   transition: 0.5s;
-  margin-left: 2rem;
+  margin: 0rem 0rem 2rem 2rem;
 }
 
 .contact-social {
