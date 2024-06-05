@@ -31,8 +31,8 @@ website: https://aromalanil.in/
   --dark-shadow: #051020;
   --footer: #131d2c;
 
-  --montserrat: "Montserrat", sans-serif;
-  --open-sans: "Open Sans", sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
+  --open-sans: 'Open Sans', sans-serif;
 }
 
 html {
@@ -305,6 +305,7 @@ li {
   color: var(--white);
   font-weight: 600;
   font-size: 3.5rem;
+  line-height: 4rem;
 }
 
 .btn-grp {
@@ -417,7 +418,7 @@ li {
 }
 
 .tab::after {
-  content: "";
+  content: '';
   display: block;
   background: var(--dim-white);
   height: 2.5px;
@@ -427,7 +428,7 @@ li {
 }
 
 .active::after {
-  content: "";
+  content: '';
   display: block;
   background: var(--red);
   height: 2.5px;
@@ -535,7 +536,7 @@ li {
 }
 
 .project-tab::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 3px;
@@ -549,7 +550,7 @@ li {
   color: var(--red);
 }
 .active-project::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 3px;
@@ -641,11 +642,7 @@ li {
   align-items: center;
   justify-content: center;
   background-color: var(--red);
-  background: linear-gradient(
-    90deg,
-    rgba(254, 62, 87, 1) 0%,
-    rgba(250, 91, 111, 1) 100%
-  );
+  background: linear-gradient(90deg, rgba(254, 62, 87, 1) 0%, rgba(250, 91, 111, 1) 100%);
   transition: 0.1s;
 }
 
