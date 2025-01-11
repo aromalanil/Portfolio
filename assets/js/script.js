@@ -75,7 +75,8 @@ $(document).ready(() => {
 
 
   //Setting Activate Tab in About Section
-  viewTab('skills', "skill-head");
+  viewTab('experience', 'exp-head');
+
 
 
 
