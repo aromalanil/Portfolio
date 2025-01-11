@@ -15,7 +15,8 @@ $(window).on('load', () => {
 
 $(document).ready(() => {
 
-
+  // Set Copyright year
+  $('#copyright-year').text(new Date().getFullYear());
 
   //NavBar Drop Shadow on scroll
   $(window).scroll(function () {
